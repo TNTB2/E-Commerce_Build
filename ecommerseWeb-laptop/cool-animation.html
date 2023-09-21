@@ -1,0 +1,97 @@
+<html>
+<style>
+    @keyframes expandCircle {
+        0% {
+            transform: scale(0.5);
+            color: #FFF;
+        }
+
+        100% {
+            transform: scale(10.5);
+            color: #FFF;
+        }
+    }
+
+    @keyframes contractCircle {
+        0% {
+            transform: scale(10.5);
+            color: #FFF;
+        }
+
+        100% {
+            transform: scale(1.5);
+            color: #FFF;
+        }
+    }
+
+    .body {
+        background-color: #eaf6f5;
+        height: 100vh;
+    }
+
+    .content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .circle-scale-up {
+        animation: expandCircle .2s forwards;
+        animation-timing-function: cubic-bezier(.79, -0.08, .37, 1.47);
+    }
+
+    .circle-scale-down {
+        animation: contractCircle .2s forwards;
+        background-color: white;
+        animation-timing-function: cubic-bezier(.79, -0.08, .37, 1.47);
+    }
+
+    .circle-button {
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+        min-width: 0;
+        background: #fff;
+        color: #4c505b;
+        padding: 32px 16px;
+        text-align: left;
+        text-decoration: none !important;
+        font-size: 14px;
+        transition: background-color 100ms;
+        position: relative;
+        font-weight: 600;
+        border-radius: 40px;
+        box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+        display: -webkit-inline-box;
+        cursor: pointer;
+        transform: scale(1.5);
+        color: white;
+    }
+</style>
+<div class="body">
+    <div class="content">
+        <h2>🤟 Click on the circle to toggle animations 🤟</h2>
+        <div id="circle" class="circle-button" onclick="myFunction()">
+            CLICK
+        </div>
+    </div>
+</div>
+<script>
+    function myFunction() {
+        const elem = document.getElementById("circle");
+        console.log(elem.classList);
+        if (elem.classList[1] === undefined || elem.classList[1] === 'circle-scale-down') {
+            elem.classList.remove("circle-scale-down");
+            elem.classList.add("circle-scale-up");
+        } else {
+            elem.classList.remove("circle-scale-up");
+            elem.classList.add("circle-scale-down");
+        }
+
+    }
+</script>
+
+</html>
