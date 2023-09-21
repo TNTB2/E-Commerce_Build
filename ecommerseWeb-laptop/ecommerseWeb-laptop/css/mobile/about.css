@@ -1,0 +1,155 @@
+
+@media only screen and (max-width: 700px)/*500*/ {
+
+    /*----------------------------------------Job Roles/ Part1-----------------------------------------*/
+    
+    .roles {
+        width: 110%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        height: 1050px;
+        margin-bottom: -400px;
+    }
+
+    .paralax2Content {
+        width: 80%;
+        padding: 5px 40px 80px 40px;
+        height: 850px;
+        transform: translateX(-50%);
+        margin: 5% 0 -10% 50%;
+    }
+
+    .xp1,
+    .xp2,
+    .xp3 {
+        padding: 10px;
+        width: 70%;
+        height: 220px;
+        margin-top: -18px;
+    }
+    
+    .xp1 {
+        transform: rotate(0deg);
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .xp2 {
+        margin-top: 250px;
+        margin-left: 50%;
+        transform: translateX(-63%);
+    }
+
+    .xp3 {
+        transform: rotate(0deg);
+        margin-top: 290px;
+        margin-left: 50%;
+        transform: translateX(-13%);
+    }
+
+    .xp1:hover {
+        margin-top: -50px;
+        margin-left: 50%;
+        transform: translateX(-63%);
+    }
+    .xp2:hover {
+        margin-top: 205px;
+        margin-left: 50%;
+        transform: translateX(-63%);
+    }
+    .xp3:hover {
+        margin-top: 470px;
+        margin-left: 50%;
+        transform: translateX(-63%);
+    }
+
+
+
+    /*----------------------------------------Cover Letter Section / Part2-----------------------------------------*/
+
+
+    .cover {
+        margin-top: 340px;
+        margin-left: -70%;
+        transform: translateX(50%);
+        width: 120%;
+    }
+
+    .letter {
+        padding: 10px;
+        width: 85%;
+        transform: translateX(-50%);
+        margin-left: 50%;
+        height: 580px;
+        margin-top: 30px;
+    }
+
+    .letter:hover {
+        height: 1400px;
+        margin-bottom: -35px;
+    }
+
+    .letterAddressInfo {
+        padding: 10px 0 0 50px;
+    }
+
+
+    .letterDesc {
+        padding: 10px 20px 0 20px;
+        margin-left: 0px;
+    }
+
+
+    /*----------------------------------------Portfolio Part/ Part3-----------------------------------------*/
+
+
+    .portfolio {
+        margin: 0 0 5% 50%;
+        width: 120%;
+        height: 100%;
+        transform: translateX(-50%);
+        padding: 50px 0 50px 0;
+    }
+
+    .prtf {
+        padding: 10px;
+        width: 85%;
+        transform: translateX(20px);
+        height: 550px;
+        margin: -23px 0 70px 0;
+    }
+
+    .prtf:hover {
+        height: 2300px;
+        margin-bottom: -35px;
+    }
+
+
+    .job1 {
+        width: 300px;
+        margin: 5px 0 0 -10px;
+        padding: 40px;
+    }
+
+    .job2 {
+        width: 300px;
+        margin: 1% -24% 0 0;
+        padding: 40px
+    }
+
+    
+    
+    .companyWork {
+        margin-left: -20px;
+    }
+    
+    .companyReferencing {
+        width: 110px;
+        margin: 0 20px -50px 0;
+    }
+
+    .showMoreBtn {
+        margin: -50px 10px 80px 160px;
+        width: 100px;
+    }
+}

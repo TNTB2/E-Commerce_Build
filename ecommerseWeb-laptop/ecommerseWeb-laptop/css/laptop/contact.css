@@ -1,0 +1,189 @@
+
+/*----------------------------------------Contact Details/ Part1-----------------------------------------*/
+
+.content {
+    margin-top: 200px;
+}
+
+.part1 {
+    padding: 50px;
+    display: table;
+    background-image: url("../media/red-room.gif");
+    margin-bottom: -20px;
+    width: 92.1%;
+}
+
+.address {
+    color: white;
+    float: left;
+    text-align: right;
+    padding-right: 30px;
+    display: table-row;
+    margin-left: 77px;
+    border: solid 2px white;
+    border-left: none;
+    width: 40.5%;
+}
+
+.contactinfo {
+    color: white;
+    float: right;
+    text-align: left;
+    padding-left: 30px;
+    display: table-row;
+    margin-right: 77px;
+    border: solid 2px white;
+    border-right: none;
+    width: 40.5%;
+}
+
+.address h1 {
+    color: white;
+    text-align: right;
+    float: right;
+}
+
+.contactinfo h1 {
+    color: white;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+
+
+
+.paralaxDivider {
+    height: 100px;
+    width: 100%;
+    transform: translateX(-50%);
+    margin-left: 50%;
+    background-color: #772424;
+    z-index: 9;
+    position: absolute;
+}
+
+.paralaxDivider h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+
+/*----------------------------------------Contact Form/ Part2-----------------------------------------*/
+
+
+.part2 {
+    padding: 10px;
+    height: 100%;
+    background-image: url("../media/red-room.gif");
+}
+
+.formBlock {
+    z-index: 1;
+    position: relative;
+    border-radius: 2%;
+    background-color: #00000093;
+    width: 700px;
+    height: 500px;
+    transform: translateX(-50%);
+    margin-left: 50%;
+    margin-top: 50px;
+    margin-bottom: 10%;
+}
+
+.formBlock h3 {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form {
+    color: #ffffff;
+    text-align: right;
+    padding: 30px;
+    transform: translateX(-20%);
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inputBreaks {
+    display: none;
+}
+
+.form input,
+.form textarea {
+    transform: translateX(15%);
+    width: 30%;
+}
+
+.subm {
+    color: #ffffff;
+    background-color: #000000;
+    border: solid 2px #641313;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transform: translateX(-165%);
+}
+
+
+/*----------------------------------------Download Btn & References/ Part3-----------------------------------------*/
+
+
+.part3 {
+    padding: 50px;
+    display: table;
+    background-image: url("../media/red-room.gif");
+    width: 92.1%;
+}
+
+.download {
+    color: white;
+    float: left;
+    padding-right: 30px;
+    display: table-row;
+    margin: 50px 0 50px 77px;
+    border: solid 2px white;
+    border-left: none;
+    width: 40.5%;
+    height: 220px;
+}
+
+.referencesBlock {
+    color: white;
+    float: right;
+    text-align: left;
+    padding-left: 30px;
+    display: table-row;
+    margin: 50px 77px 50px 0;
+    border: solid 2px white;
+    border-right: none;
+    width: 40.5%;
+    height: 220px;
+}
+
+.download h1 {
+    color: white;
+    text-align: right;
+    float: right;
+}
+
+.referencesBlock h1 {
+    color: white;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.download button {
+    color: #ffffff;
+    width: 100px;
+    height: 100px;
+    margin: 0px 20px 5px -20px;
+    margin-left: 50%;
+    border-radius: 50%;
+    background-color: #000000d5;
+    border: solid 4px #641313
+}
+

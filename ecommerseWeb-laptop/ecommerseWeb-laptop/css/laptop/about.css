@@ -1,0 +1,311 @@
+
+/*----------------------------------------Job Roles/ Part1-----------------------------------------*/
+
+.paralaxDivider {
+    height: 100px;
+    width: 100%;
+    background-color: #772424;
+}
+
+.roles {
+    padding: 10px;
+    margin-top: 50px;
+    height: 600px;
+    background-image: url("../media/red-room.gif");
+}
+
+.paralax2Content {
+    width: 700px;
+    padding: 5px 40px 80px 40px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.781);
+    border-radius: 10px;
+    transform: translateX(-50%);
+    margin: 5% 0 -10% 50%;
+}
+
+.paralax2Content h2 {
+    margin: 30px 0 60px 0;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: #6d4f4f;
+    padding: 5px;
+    width: 300px;
+    text-align: center;
+}
+
+.xp1,
+.xp2,
+.xp3 {
+    color: white;
+    background-color: #000000;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    border: 2px solid rgb(255, 255, 255);
+    margin-top: -18px;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 2;
+    position: relative;
+    transition: all 0.5s ease-out;
+}
+
+.xp1:hover,
+.xp2:hover,
+.xp3:hover {
+    height:300px;
+    border: 2px solid rgb(0, 0, 0);
+    opacity: 0.9;
+    position: static;
+    width: 300px;
+    margin: -5px;
+    margin-top: -80px;
+    transition: all 0.5s ease-out;
+}
+
+.xp1:hover {
+    margin: 0px -65px 0 0;
+    z-index: 6;
+    position: absolute;
+}
+
+.xp2:hover {
+    margin: -20px -30px 0 185px;
+    z-index: 7;
+    position: absolute;
+}
+
+.xp3:hover {
+    margin: 0px 0 0 380px;
+    z-index: 6;
+    position: absolute;
+    transition: all 0s ease-out;
+}
+
+.xp1 {
+    float: left;
+    margin: 30px 0 0 5px;
+    transform: rotate(-10deg);
+}
+
+.xp2 {
+    float: left;
+    margin: 0 0 -10px 230px;
+    width: 217px;
+    height: 217px;
+    z-index: 5;
+    position: absolute;
+}
+
+.xp3 {
+    float: right;
+    margin: 30px 5px 0 0;
+    transform: rotate(10deg);
+    transition: all 0s ease-out;
+}
+
+.xp1 h2,
+.xp2 h2,
+.xp3 h2 {
+    margin-bottom: 20px;
+}
+
+.xp1 h4,
+.xp2 h4,
+.xp3 h4 {
+    margin-bottom: 20px;
+    color: #6d4f4f;
+    text-align: center;
+}
+
+.xp1 h4 span,
+.xp2 h4 span,
+.xp3 h4 span {
+    color: #772424;
+}
+
+.xp1 h3,
+.xp2 h3,
+.xp3 h3 {
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+/*----------------------------------------Cover Letter Section / Part2-----------------------------------------*/
+
+
+.cover {
+    margin-top: 0px;
+}
+
+.coverLetter {
+    padding: 50px 0 50px 0;
+    background-image: url("../media/red-room.gif");
+}
+
+.letter h1,
+.prtf h1 {
+    color: white;
+    background-color: #6d4f4f;
+    padding: 5px;
+    transform: translateX(-50%);
+    margin-left: 50%;
+    width: 170px;
+}
+
+.letter {
+    color: white;
+    border-radius: 10px;
+    background-color: #000000c0;
+    padding: 10px;
+    width: 95%;
+    transform: translateX(-50%);
+    margin-left: 50%;
+    height: 550px;
+    border: 2px solid rgb(255, 255, 255);
+    margin-top: -23px;
+    transition: all 0.5s ease-out;
+    overflow: hidden;
+}
+
+.letter:hover {
+    background-color: #000000;
+    height: 1000px;
+    margin-bottom: -35px;
+    transition: all 0.5s ease-out;
+}
+
+
+.letterSection {
+    height: 90%;
+}
+
+.letterAddressInfo {
+    float: right;
+    padding: 10px 50px 0 0;
+}
+
+.addressSection {
+    list-style-type: none;
+}
+
+.docSection {
+    width: 300px;
+    margin: -40px 0 0 -10px;
+    height: 20px;
+}
+
+.docSection li {
+    list-style-type: none;
+}
+
+.docSection li button {
+    border: solid 2px rgb(99, 0, 0);
+    background-color: #00000096;
+    color: white;
+    width: 100px;
+    height: 30px;
+}
+
+#qdoc,
+#idDoc {
+    float: left;
+    margin-left: -40px;
+}
+
+#transportDoc {
+    float: right;
+    margin-top: -30px;
+}
+
+.letterDesc {
+    float: left;
+    padding: 10px 20px 0 20px;
+    margin-left: 0px;
+}
+
+
+/*----------------------------------------Portfolio Part/ Part3-----------------------------------------*/
+
+
+.portfolio {
+    width: 100%;
+    height: 100%;
+    padding: 50px 0 50px 0;
+    background-image: url("../media/red-room.gif");
+}
+
+.prtf {
+    color: white;
+    padding: 10px;
+    width: 95%;
+    transform: translateX(20px);
+    height: 400px;
+    margin: -23px 0 70px 0;
+    transition: all 0.5s ease-out;
+    overflow: hidden;
+}
+
+.prtf:hover {
+    background-color: #000000;
+    height: 1000px;
+    margin-bottom: -35px;
+    transition: all 0.5s ease-out;
+}
+
+
+.job1 {
+    float: left;
+    color: #ffffff;
+    width: 41.5%;
+    border: solid 2px #ffffff;
+    border-left: none;
+    margin: 5px 0 0 20px;
+    padding: 40px;
+}
+
+.job2 {
+    float: right;
+    color: #ffffff;
+    width: 41.5%;
+    border: solid 2px #ffffff;
+    border-right: none;
+    margin: 5px 20px 0 0;
+    padding: 40px
+}
+
+
+.companyWork h1 {
+    background-color: #00000096;
+    margin-left: 80px;
+    padding: 15px;
+}
+
+
+.companyWork {
+    float: left;
+    width: 50%;
+}
+
+.companyReferencing {
+    float: right;
+    width: 150px;
+    background-color: #00000096;
+    padding: 5px 5px 5px 15px;
+    margin: 0 -25px 0 0;
+}
+
+.showMoreBtn {
+    margin: -30px 10px 30px 210px;
+    color: #ffffff;
+    background-color: #772424;
+    padding: 10px;
+    font-style: italic;
+    font-weight: bold;
+    border: dotted 3px #ffffff;
+}
+
