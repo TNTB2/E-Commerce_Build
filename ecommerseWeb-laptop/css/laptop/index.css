@@ -1,0 +1,280 @@
+
+/*----------------------------------------Introduction/ Part1-----------------------------------------*/
+
+.content {
+    margin-top: 200px;
+}
+
+.paralax1 {
+    padding: 50px;
+    background-image: url("../media/red-room.gif");
+}
+
+.brief {
+    padding: 0 100px 50px 100px;
+}
+
+h1 {
+    color: white;
+    background-color: #6d4f4f;
+    padding: 5px;
+    width: 145px;
+    margin-left: -105px;
+}
+
+.brief p {
+    color: white;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: #000000c0;
+    padding: 10px;
+    width: 120%;
+    height: 200px;
+    border: 2px solid rgb(255, 255, 255);
+    margin-top: -23px;
+    transition: all 0.5s ease-out;
+}
+
+.brief p:hover {
+    background-color: #000000;
+    width: 125%;
+    height: 250px;
+    margin-bottom: -35px;
+    transition: all 0.5s ease-out;
+}
+
+
+
+.paralaxDivider {
+    height: 100px;
+    width: 100%;
+    background-color: #772424;
+}
+
+
+/*----------------------------------------Job Roles/ Part2-----------------------------------------*/
+
+
+.paralax2 {
+    padding: 10px;
+    height: 500px;
+    background-image: url("../media/red-room.gif");
+}
+
+.paralax2Content {
+    width: 100%;
+    transform: translateX(50%);
+    margin-left: -50%;
+}
+
+.paralax2Content h2 {
+    margin-left: 50%;
+    margin-top: 70px;
+    transform: translateX(-50%);
+    color: white;
+    background-color: #6d4f4f;
+    padding: 5px;
+    width: 290px;
+    text-align: center;
+}
+
+.xp1,
+.xp2,
+.xp3 {
+    color: white;
+    background-color: #000000;
+    padding: 10px;
+    width: 30%;
+    height: 250px;
+    border: 2px solid rgb(255, 255, 255);
+    margin-top: -18px;
+    transition: all 0.5s ease-out;
+    border-radius: 10px;
+}
+
+.xp1:hover,
+.xp2:hover,
+.xp3:hover {
+    color: black;
+    background-color: white;
+    transition: all 0.5s ease-out;
+    height: 400px;
+    border: 2px solid rgb(0, 0, 0);
+    opacity: 0.9;
+    position: static;
+    width: 35%;
+    margin: -5px;
+    margin-top: -80px;
+}
+
+.xp1 {
+    float: left;
+    margin-left: 10px;
+}
+
+.xp2 {
+    float: left;
+    margin-left: 1.5%;
+}
+
+.xp3 {
+    float: left;
+    margin-left: 20px;
+}
+
+.xp1:hover {
+    margin-right: -4%;
+}
+
+.xp2:hover {
+    margin-left: -1%;
+    margin-right: -2.5%;
+}
+
+.xp3:hover {
+    margin-left: -3.5%;
+}
+
+
+
+
+/*----------------------------------------Form Section/ Part3-----------------------------------------*/
+
+.paralax3 {
+    padding: 10px;
+    height: 800px;
+    background-image: url("../media/red-room.gif");
+}
+
+.paralax3Content h2 {
+    margin-left: 50.5%;
+    margin-top: 70px;
+    transform: translateX(-50%);
+    color: white;
+    background-color: #6d4f4f;
+    padding: 5px;
+    width: 400px;
+    text-align: center;
+}
+
+/*----------------------------------------Portfolio Btn Elements-----------------------------------------*/
+
+.portfolioBtn {
+    float: left;
+    margin: 20% 0 0 7%;
+}
+
+.portfl1,
+.portfl2,
+.portfl3 {
+    width: 100px;
+    height: 100px;
+    background-color: #9797977a;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.portfl1 {
+    float: left;
+    transform: rotate(-15deg);
+    margin: 10px -50px 0 0;
+}
+
+.portfl2 {
+    float: left;
+    background-color: #641313;
+    transform: translateZ(50px);
+}
+
+.portfl2 h4,
+.abt-container h4 {
+    color: #ffffff;
+    text-align: center;
+}
+
+.portfl3 {
+    float: right;
+    transform: rotate(15deg);
+    margin: 10px 0 0 -50px;
+}
+
+.portfl2:hover {
+    width: 100px;
+    height: 100px;
+    background-color: #3b1313b7;
+    position: relative;
+}
+
+.portfl1:hover,
+.portfl3:hover {
+    pointer-events: none;
+}
+
+
+/*----------------------------------------About Btn Elements-----------------------------------------*/
+
+.aboutBtn {
+    float: right;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: #00000062;
+    margin: -32% 7% 0 0;
+    width: 200px;
+    height: 100px;
+}
+
+.abt-container {
+    background-color: #641313;
+    border: 2px solid rgb(255, 255, 255);
+    margin: -30px 0 0 50px;
+    width: 100px;
+    height: 100px;
+}
+
+.abt-container:hover {
+    background-color: #3b1313b7;
+}
+
+
+/*----------------------------------------Form-----------------------------------------*/
+
+.formBlock {
+    float: left;
+    border-radius: 2%;
+    background-color: #00000093;
+    width: 400px;
+    height: 600px;
+    transform: translateX(-50%);
+    margin-left: 50%;
+    margin-top: -25%;
+}
+
+.formBlock h3 {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: -30px;
+}
+
+.form {
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form input,
+.form textarea {
+    transform: translateX(0%);
+    width: 80%;
+}
+
+.subm {
+    color: #ffffff;
+    background-color: #000000;
+    border: solid 2px #641313;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+}
+

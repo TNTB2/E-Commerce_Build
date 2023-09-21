@@ -1,0 +1,206 @@
+/*----------------------------------------NAV-----------------------------------------*/
+/*  for mobile devices:
+480×800, 640×1136, 720×1280, 750×1334, 1080×1920, and 1440×2560. 
+The most common resolution is 720x1280 */
+
+
+@media only screen and (max-width: 500px) {
+
+    .header {
+        padding: 5px;
+        margin-left: 60%;
+        transform: translateX(-40%);
+    }
+
+    .nav {
+        padding: 10px;
+        margin: 0 0 0 -120px;
+        transform: translateX(-5%);
+    }
+
+    /*----------------------------------------BurgerNAV-----------------------------------------*/
+    .burgerNavContainer {
+        display: inline-block;
+        cursor: pointer;
+        margin: 30px 0 0 100px;
+        position: absolute;
+        z-index: 9;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .change .bar1 {
+        transform: translate(0, 11px) rotate(-45deg);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        transform: translate(0, -11px) rotate(45deg);
+    }
+
+    /*----------------------------------------***-----------------------------------------*/
+
+    .phoneNavBtn {
+        transform: translateX(-5%);
+    }
+
+    .navLinks {
+        margin-top: 20px;
+        width: 95%;
+        height: 40px;
+        padding: 10px;
+    }
+
+    .nav ul {
+        margin: 70px 45px 0 55px;/*  ----------adjust up and down--------*/
+        display: none;
+    }
+    
+    .nav ul li {
+        padding: 0px;
+        margin: 0 -70px 0 -70px;
+    }
+
+    .nav ul li a {
+        padding: 5px 10px 5px 10px;
+    }
+    .home {
+        float: left;
+        margin: 0 5% 0 -180%;
+    }
+    .about {
+        float: left;
+        margin: 0 5% 0 -100%;
+    }
+    .contact {
+        float: left;
+        margin: 0 5% 0 -18%;
+    }
+    .nav ul li a:hover {
+        padding: 8px 10px 8px 10px;
+        margin-top: -2.5px;
+    }
+
+    .nav img {
+        width: 100px;
+        margin-left: 50%;
+        margin-top: -80px;
+        transform: translateX(-150%);
+    }
+
+    .nav h2 {
+        margin: 50px -15px 0 0;
+        text-align: center;
+    }
+
+
+    /*----------------------------------------Footer-----------------------------------------*/
+
+
+
+
+
+    .footer {
+        padding: 80px 40px 80px 40px;
+        margin-top: -10px;
+        height: 50px;
+    }
+
+    .phoneFooterBtn {
+        padding: 20px 20px 20px 20px;
+        margin-top: -20px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        font-size: 36px;
+    }
+
+    .ftrDiv1,
+    .ftrDiv2,
+    .ftrDiv3 {
+        margin: 40px 0 0 0;
+        width: 200px;
+        height: 70px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .ftrDiv1 a,
+    .ftrDiv2 a,
+    .ftrDiv3 a {
+        padding: 5px 20px 5px 20px;
+        margin-left: 45px;
+    }
+
+
+    .firstList,
+    .secondList,
+    .thirdList {
+        margin-left: 15px;
+        width: 170px;
+    }
+
+    .ftrDiv1 ul li,
+    .ftrDiv2 ul li,
+    .ftrDiv3 ul li {
+        width: 100px;
+        font-size: 12px;
+    }
+
+
+    /*----------------------------------------Developer Section/ Sponser-----------------------------------------*/
+
+
+
+    .developerSection {
+        padding: 30px;
+        margin: 20px 0 0 0;
+        height: 180px;
+        width: 280px;
+        margin-left: -50%;
+        transform: translateX(20%);
+        box-shadow: -20px 0 100px rgba(3, 186, 192, 0.589);
+    }
+
+    .developerBtn {
+        width: 150px;
+        font-size: 24px;
+    }
+
+    .developerSection ul {
+        font-size: 12px;
+        width: 90px;
+        height: 80px;
+        margin: -100px 0 0 150px;
+        padding-top: 20px;
+    }
+
+    .developerSection ul li {
+        margin-left: -60px;
+    }
+
+    .developerSection h4,
+    .developerSection p {
+        font-size: 14px;
+        width: 300px;
+        margin-top: 10px;
+    }
+
+    .developerSection h4 {
+        margin: 130px 0 -5px 0;
+        font-size: 16px;
+    }
+
+}

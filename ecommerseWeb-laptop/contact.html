@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ruan van den Berg Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/laptop/nav-footer.css">
+    <link rel="stylesheet" href="css/mobile/nav-footer.css">
+    <link rel="stylesheet" href="css/laptop/contact.css">
+    <link rel="stylesheet" href="css/mobile/contact.css">
+    
+    <style>
+        body {
+            background-color: #161616;
+        }
+
+        .website {
+            width: 85%;/*1366px*/
+            height: 70%;/*768px*/
+            transform: translateX(-50%);
+            margin-left: 50%;
+        }
+
+
+    </style>
+</head>
+<script>
+    function burgerToggle(x) {
+        x.classList.toggle("change");
+        var x = document.getElementById("navigation");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+<body>
+
+    <div class="website">
+        <br>
+        <div class="header">
+            <div class="nav">
+
+                <div class="burgerNavContainer" onclick="burgerToggle(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                
+                <div class="navLinks">
+                    <a href="#" class="phoneNavBtn fa fa-phone"></a>
+                    <ul id="navigation">
+                        <li><a href="index.html" class="home">Home</a></li>
+                        <li><a href="about.html" class="about">About</a></li>
+                        <li><a href="contact.html" class="contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <img src="css/media/red-anime.gif" alt="My Image">
+                <h2>Ruan van Den Berg</h2>
+
+            </div>
+        </div>
+        <br>
+
+        <div class="content">
+            <div class="part1">
+                <div class="address">
+                    <h1>My Address</h1><br><br><br><br>
+                    <p>
+                        8 Dingle st.<br>
+                        krugersdorp.<br>
+                        Johannedburg<br>
+                        1739<br>
+                    </p>
+                </div>
+                <div class="contactinfo">
+                    <h1>Contact Me</h1>
+                    <p>
+                        Cell: 0000000000<br>
+                        Alternative: 0000000000<br>
+                        Email: ruanvdberg@gmail.com<br><br>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="paralaxDivider">
+            <br>
+            <h1>Or get in touch here!</h1>
+        </div>
+
+        <div class="part2">
+            <br><br>
+            <div class="formBlock">
+                <br>
+                <h3>Fill in the form below to establish a line of
+                    communication & I'll get back to you ASAP:</h3>
+
+                <!--this form sends an email to my direct email adress while hiding my naked email adress-->
+                <form class="form" action="https://formsubmit.co/2159ab33c05892f928982819b08ec988" method="POST">
+                    <!--this is the site's address:: https://tntb2.github.io/formsubmition/form.html-->
+                    <!--HoneyPot-->
+                    <input type="text" name="_honey" style="display: none;">
+
+                    <!--Disable captcha-->
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <!--adding a success page after form subpition-->
+                    <input type="hidden" name="_next" value="https://tntb2.github.io/formsubmition/formsubmition.html">
+
+                    <label>Name & surname</label>
+                    <div class="inputBreaks"><br></div>
+                    <input type="text" class="name" name="Name&nbsp;&&nbsp;Last&nbsp;Name" placeholder="Jane Doe"
+                        required>
+                    <br><br>
+                    <label>Email</label>
+                    <div class="inputBreaks"><br></div>
+                    <input type="email" class="email" name="E-mail" placeholder="JaneDoe@gmail.com" required>
+                    <br><br>
+                    <label>Mobile number</label>
+                    <div class="inputBreaks"><br></div>
+                    <input type="number" class="number" name="Phone" placeholder="0836057751" required>
+                    <br><br>
+                    <label>Notes / comments</label>
+                    <div class="inputBreaks"><br></div>
+                    <textarea type="textarea" class="comment" name="Comment,&nbsp;Questions "
+                        placeholder="Comment here..." required></textarea>
+                    <br>
+                    <br>
+                    <button class="subm" type="submit" value="Send">Submit</button>
+
+                </form>
+            </div>
+
+        </div>
+
+        <div class="part3">
+
+            <div class="download">
+                <h1>Download an offline CV(pdf)</h1>
+                <button> *Download* </button>
+            </div>
+
+            <div class="referencesBlock">
+                <h1>References:</h1>
+                <p>blah <span>blah!...</span></p>
+                <p>blah <span>blah!...</span></p>
+                <p>blah <span>blah!...</span></p>
+            </div>
+
+        </div>
+
+
+
+        <div class="footer">
+            <a href="#" class="phoneFooterBtn fa fa-phone"></a>
+
+            <div class="ftrDiv1">
+                <a href="#">Linked-In</a>
+                <div class="firstList">
+                    <ul>
+                        <li>Understand my work dynamic</li>
+                        <li>Get Familiar</li>
+                        <li>Passed experience</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="ftrDiv2">
+                <a href="#">Instagram</a>
+                <div class="secondList">
+                    <ul>
+                        <li>Understand my work dynamic</li>
+                        <li>Get Familiar</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="ftrDiv3">
+                <a href="#">Facebook</a>
+                <div class="thirdList">
+                    <ul>
+                        <li>Passed experience</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="developerSection">
+                <a href="#" class="developerBtn">Get In touch with the developer of this site >></a>
+                <ul>
+                    <li>Tiaan Bezuidenhout</li><br>
+                    <li>3D & Web-Developer</li><br>
+                    <li>0673486378</li><br>
+                </ul>
+                <h4>Looking for a website of your own?</h4>
+                <p>Take a look at my website and portfolio-work, or get in touch whenever you feel like it!</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+@media only screen and (max-width: 700px)/*500*/ {
+
+    /*----------------------------------------Introduction/ Part1-----------------------------------------*/
+
+    .content {
+        width: 50%;
+        transform: translateX(-170%);
+    }
+
+    .paralax1 {
+        padding: 50px;
+        width: 300px;
+        margin-left: 100px;
+        transform: translateX(23%);
+    }
+
+    .brief {
+        padding: 0 100px 50px 100px;
+        width: 85%;
+        margin-left: -25%;
+    }
+
+    h1 {
+        padding: 5px;
+        width: 145px;
+        margin-left: -40px;
+    }
+
+    .brief p:hover {
+        width: 130%;
+        height: 350px;
+        margin-bottom: -35px;
+    }
+
+
+    .paralaxDivider {
+        width: 120%;
+        transform: translateX(-50%);
+        margin-left: 50%;
+    }
+
+
+    /*----------------------------------------Job Roles/ Part2-----------------------------------------*/
+
+
+    .paralax2 {
+        padding: 10px;
+        height: 1150px;
+        width: 110%;
+        transform: translateX(-50%);
+        margin-left: 50%;
+    }
+
+    .paralax2Content {
+        width: 100%;
+    }
+
+
+    .xp1,
+    .xp2,
+    .xp3 {
+        padding: 10px;
+        width: 70%;
+        height: 250px;
+        margin-left: 50%;
+        margin-top: 10px;
+        transform: translateX(-50%);
+    }
+    .xp1 {
+        margin-top: -18px;
+    }
+
+    .xp1:hover,
+    .xp2:hover,
+    .xp3:hover {
+        height: 400px;
+        width: 75%;
+        margin-left: 50%;
+        margin-top: -70px;
+    }
+
+    .xp3 {
+        float: left;
+    }
+
+    .xp1:hover {
+        margin-top: -20px;
+    }
+    
+    .xp2:hover {
+        margin-top: 10px;
+    }
+    
+    .xp3:hover {
+        margin-top: 10px;
+    }
+
+    /*----------------------------------------Form Section/ Part3-----------------------------------------*/
+
+    .paralax3 {
+        padding: 10px;
+        height: 1300px;
+        width: 110%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .paralax3Content h2 {
+        margin-left: 50%;
+        margin-top: 70px;
+        margin-bottom: 50px;
+        transform: translateX(-50%);
+        padding: 5px;
+        width: 300px;
+    }
+
+    /*----------------------------------------Portfolio Btn Elements-----------------------------------------*/
+
+    .portfolioBtn {
+        width: 230px;
+        margin: 15px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /*----------------------------------------About Btn Elements-----------------------------------------*/
+
+    .aboutBtn {
+        margin: 15px 0 15px 0;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        float: left;
+    }
+
+    /*----------------------------------------Form-----------------------------------------*/
+
+    .formBlock {
+        width: 300px;
+        height: 700px;
+        transform: translateX(-50%);
+        margin: 10% 0 20% 50%;
+    }
+
+    .formBlock h3 {
+        padding: 20px;
+        margin-bottom: -30px;
+    }
+
+    .form {
+        padding: 30px;
+    }
+
+    .form input,
+    .form textarea {
+        transform: translateX(0%);
+        width: 80%;
+    }
+
+}
