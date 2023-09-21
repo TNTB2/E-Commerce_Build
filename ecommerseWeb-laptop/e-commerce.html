@@ -24,6 +24,7 @@
             margin-left: 50%;
         }
     </style>
+
 </head>
 
 <body>
@@ -60,11 +61,6 @@
         <br><br><br>
         <br><br>
 
-        <div class="paralaxDivider">
-            <br>
-            <h1>Brows our product range:</h1>
-        </div>
-
         <div class="part2">
             <br><br>
             <div class="formBlock">
@@ -73,119 +69,241 @@
 
                 <br>
                 <div class="productDesc1">
+                    <br><br>
                     <h2>This Product!</h2>
 
-                    <h3>This Product will blow your mind away! <br> So act fast and get it today while stocks last. With
+                    <p>This Product will blow your mind away! <br> So act fast and get it today while stocks last. With
                         the latest
                         and most innovative design pattern, this would make the most perfect gift. It lasts a lifetime
                         with the guarantee to
                         back that. Dont miss out on this special deal! <br> <span>Financing is available at standard
                             rates of
-                            4%pm.</span></h3>
+                            4%pm.</span></p>
 
                     <hr>
+                    <button class="cartBtn">Add to cart</button>
+                    <br>
+                    <hr>
 
-                    <!--this form sends an email to my direct email adress while hiding my naked email adress-->
-                    <form class="form" action="https://formsubmit.co/2159ab33c05892f928982819b08ec988" method="POST">
-                        <!--this is the site's address:: https://tntb2.github.io/formsubmition/form.html-->
-                        <!--HoneyPot-->
-                        <input type="text" name="_honey" style="display: none;">
+                    <h2>More on our supply:</h2>
 
-                        <!--Disable captcha-->
-                        <input type="hidden" name="_captcha" value="false">
+                    <div class="suplier1"></div>
+                    <div class="suplier2"></div>
+                    <div class="suplier3"></div>
+                    <div class="suplier4"></div>
+                </div>
 
-                        <!--adding a success page after form subpition-->
-                        <input type="hidden" name="_next"
-                            value="https://tntb2.github.io/E-Commerce_Build/ecommerseWeb-laptop/e-commerce.html">
+            </div>
 
-                        <label>Name & surname</label>
-                        <div class="inputBreaks"><br></div>
-                        <input type="text" class="name" name="Name&nbsp;&&nbsp;Last&nbsp;Name" placeholder="Jane Doe"
-                            required>
-                        <br><br>
-                        <label>Number</label>
-                        <div class="inputBreaks"><br></div>
-                        <input type="number" class="number" name="Number" placeholder="Contact-Number" required>
-                        <br><br>
-                        <label>Colour: </label>
-                        <div class="inputBreaks"><br></div>
-                        <label>Blue</label>
-                        <input type="radio" class="email" name="Blue" value="Blue">
-                        <br>
-                        <div class="inputBreaks"><br></div>
-                        <label>Red</label>
-                        <input type="radio" class="number" name="Red" value="Red">
-                        <br><br>
-                        <label>Amount:</label>
-                        <div class="inputBreaks"><br></div>
-                        <input type="number" class="number" name="Amount" placeholder="0">
-                        <br><br>
-                        <label>Notes / comments</label>
-                        <div class="inputBreaks"><br></div>
-                        <textarea type="textarea" class="comment" name="Comment,&nbsp;Questions "
-                            placeholder="Comment here..." required></textarea>
-                        <br>
-                        <br>
+            <div class="paralaxDivider">
+                <br>
+                <h1>Brows our product range:</h1>
+            </div>
 
-                        <hr class="hrSub">
+            <div class="part2 shoppingCart">
 
-                        <button class="subm" type="submit" value="Send">Submit</button>
+                <!--<input type="hidden" name="cmd" value="cart">
+                <input type="hidden" name="upload" value="1">-->
 
+                <br><br>
+                <div class="formBlock">
+
+                    <img class="productImage1" src="css/media/red-anime.jpeg" alt="My Image">
+
+                    <br>
+                    <div class="productDesc1">
+                        <h2>This Product!</h2>
+
+                        <p>This Product will blow your mind away! <br> So act fast and get it today while stocks last.
+                            With
+                            the latest
+                            and most innovative design pattern, this would make the most perfect gift. It lasts a
+                            lifetime
+                            with the guarantee to
+                            back that. Dont miss out on this special deal! <br> <span>Financing is available at standard
+                                rates of
+                                4%pm.</span></p>
+
+                        <!--this form sends an email to my direct email adress while hiding my naked email adress-->
+                        <form class="form" action="https://formsubmit.co/2159ab33c05892f928982819b08ec988"
+                            method="POST">
+                            <hr class="hrSub">
+                            <label>Select Branch*</label>
+                            <div class="inputBreaks"><br></div>
+                            <select class="name" name="Branch" required>
+                                <option value="StrijdomPark">Strijdom Park</option>
+                                <option value="Bryanston">Bryanston</option>
+                                <option value="Klerksdorp">Klerksdorp</option>
+                            </select>
+                            <hr class="hrSub">
+                            <!--this is the site's address:: https://tntb2.github.io/formsubmition/form.html-->
+                            <!--HoneyPot-->
+                            <input type="text" name="_honey" style="display: none;">
+
+                            <!--Disable captcha-->
+                            <input type="hidden" name="_captcha" value="false">
+
+                            <!--adding a success page after form subpition-->
+                            <input type="hidden" name="_next"
+                                value="https://tntb2.github.io/E-Commerce_Build/ecommerseWeb-laptop/e-commerce.html">
+
+                            <label>Name & surname*</label>
+                            <div class="inputBreaks"><br></div>
+                            <input type="text" class="name" name="Name&nbsp;&&nbsp;Last&nbsp;Name"
+                                placeholder="Jane Doe" required>
+                            <br><br>
+                            <label>Number*</label>
+                            <div class="inputBreaks"><br></div>
+                            <input type="number" class="number" name="Number" placeholder="Contact-Number" required>
+                            <br><br>
+                            <label>Colour:* </label>
+                            <div class="inputBreaks"><br></div>
+                            <input type="radio" id="blue" class="colorRadio" name="Blue" value="Blue">
+                            <label for="blue">Blue</label>
+                            <br>
+                            <div class="inputBreaks"><br></div>
+                            <input type="radio" id="red" class="colorRadio" name="Red" value="Red">
+                            <label for="red">Red</label>
+                            <br><br>
+                            <label>Amount:*</label>
+                            <div class="inputBreaks"><br></div>
+                            <input type="number" class="number" name="Amount" placeholder="0" required>
+                            <br><br>
+                            <label>Notes / comments</label>
+                            <div class="inputBreaks"><br></div>
+                            <textarea type="textarea" class="comment" name="Comment,&nbsp;Questions "
+                                placeholder="Comment here..."></textarea>
+                            <br>
+                            <br>
+
+                            <hr class="hrSub">
+
+                            <input class="submDepo" type="button" onclick="DepoLock()" value="10% Dep*" required>
+                            <button class="subm" id="submit" type="submit" value="Send" disabled>Submit</button>
+
+                        </form>
+                    </div>
+
+                </div>
+
+                <div class="depositSection" id="depositSection" style="display: none;">
+                    <form class="paymentForm">
+                        <!--<input type="hidden" name="cmd" value="_xclick">-->
+                        <h3>Just Register/Login to your PayPal account to place your order here -></h3>
+                        <div class="paypalButtonArea">
+                            <button>Pay Deposit</button>
+                        </div>
                     </form>
                 </div>
 
             </div>
 
+            <br><br><br>
+
+            <div class="footer">
+                <a href="#" class="phoneFooterBtn fa fa-phone"></a>
+
+                <div class="ftrDiv1">
+                    <a href="#">Linked-In</a>
+                    <div class="firstList">
+                        <ul>
+                            <li>Understand my work dynamic</li>
+                            <li>Get Familiar</li>
+                            <li>Passed experience</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="ftrDiv2">
+                    <a href="#">Instagram</a>
+                    <div class="secondList">
+                        <ul>
+                            <li>Understand my work dynamic</li>
+                            <li>Get Familiar</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="ftrDiv3">
+                    <a href="#">Facebook</a>
+                    <div class="thirdList">
+                        <ul>
+                            <li>Passed experience</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="developerSection">
+                    <a href="#" class="developerBtn">Get In touch with the developer of this site >></a>
+                    <ul>
+                        <li>Tiaan Bezuidenhout</li><br>
+                        <li>3D & Web-Developer</li><br>
+                        <li>0673486378</li><br>
+                    </ul>
+                    <h4>Looking for a website of your own?</h4>
+                    <p>Take a look at my website and portfolio-work, or get in touch whenever you feel like it!</p>
+                </div>
+            </div>
+
         </div>
-
-        <br><br><br>
-
-        <div class="footer">
-            <a href="#" class="phoneFooterBtn fa fa-phone"></a>
-
-            <div class="ftrDiv1">
-                <a href="#">Linked-In</a>
-                <div class="firstList">
-                    <ul>
-                        <li>Understand my work dynamic</li>
-                        <li>Get Familiar</li>
-                        <li>Passed experience</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="ftrDiv2">
-                <a href="#">Instagram</a>
-                <div class="secondList">
-                    <ul>
-                        <li>Understand my work dynamic</li>
-                        <li>Get Familiar</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="ftrDiv3">
-                <a href="#">Facebook</a>
-                <div class="thirdList">
-                    <ul>
-                        <li>Passed experience</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="developerSection">
-                <a href="#" class="developerBtn">Get In touch with the developer of this site >></a>
-                <ul>
-                    <li>Tiaan Bezuidenhout</li><br>
-                    <li>3D & Web-Developer</li><br>
-                    <li>0673486378</li><br>
-                </ul>
-                <h4>Looking for a website of your own?</h4>
-                <p>Take a look at my website and portfolio-work, or get in touch whenever you feel like it!</p>
-            </div>
-        </div>
-
-    </div>
 </body>
+<script>
+
+    //const submitBtn = document.getElementById("submit");
+
+    //const sub = () => {
+    //  submitBtn.disabled = false;
+    //  console.log("submitBtn.disabled = false");
+    // } //else {
+    // submitBtn.disabled = true;
+    // console.log("submitBtn.disabled = true");
+    //}
+
+
+    function DepoLock() {
+
+        const submt = document.getElementById("submit");
+        submt.disabled = false;
+        console.log("submitBtn.disabled = false");
+
+        //toggle depositSection
+        const depoSection = document.getElementById("depositSection");
+        console.log(depoSection.classList);
+
+        //animation
+        if (depoSection.classList[1] === undefined || depoSection.classList[1] === 'circle-scale-down') {
+            depoSection.classList.remove("circle-scale-down");
+            depoSection.classList.add("circle-scale-up");
+        } else {
+            depoSection.classList.remove("circle-scale-up");
+            depoSection.classList.add("circle-scale-down");
+        }
+        //set display
+        if (depoSection.style.display === "none") {
+            depoSection.style.display = "block";
+            console.log("depoSection.style.display = block");
+        } else {
+            depoSection.style.display = "none";
+            depoSection.style.transition = "all 2s";
+            console.log("depoSection.style.display = none");
+        }
+
+    }
+
+    function myFunction() {
+        const elem = document.getElementById("circle");
+        console.log(elem.classList);
+        if (elem.classList[1] === undefined || elem.classList[1] === 'circle-scale-down') {
+            elem.classList.remove("circle-scale-down");
+            elem.classList.add("circle-scale-up");
+        } else {
+            elem.classList.remove("circle-scale-up");
+            elem.classList.add("circle-scale-down");
+        }
+
+    }
+
+
+</script>
 
 </html>
