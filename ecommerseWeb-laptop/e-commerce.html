@@ -125,7 +125,7 @@
                                 4%pm.</span></p>
 
                         <!--this form sends an email to my direct email adress while hiding my naked email adress-->
-                        <form class="form" action="https://formsubmit.co/2159ab33c05892f928982819b08ec988"
+                        <form class="form" id="form" action="https://formsubmit.co/2159ab33c05892f928982819b08ec988"
                             method="POST">
                             <hr class="hrSub">
                             <label>Select Branch*</label>
@@ -149,7 +149,7 @@
 
                             <label>Name & surname*</label>
                             <div class="inputBreaks"><br></div>
-                            <input type="text" class="name" name="Name&nbsp;&&nbsp;Last&nbsp;Name"
+                            <input type="text" class="name" id="name" name="Name&nbsp;&&nbsp;Last&nbsp;Name"
                                 placeholder="Jane Doe" required>
                             <br><br>
                             <label>Number*</label>
@@ -169,10 +169,10 @@
                             <div class="inputBreaks"><br></div>
                             <input type="number" class="number" name="Amount" placeholder="0" required>
                             <br><br>
-                            <label>Notes / comments</label>
+                            <label>Email-Address</label>
                             <div class="inputBreaks"><br></div>
-                            <textarea type="textarea" class="comment" name="Comment,&nbsp;Questions "
-                                placeholder="Comment here..."></textarea>
+                            <input type="text" class="email" id="email" name="E-mail,&nbsp;Address "
+                                placeholder="...@address.com">
                             <br>
                             <br>
 
@@ -290,19 +290,56 @@
 
     }
 
-    function myFunction() {
-        const elem = document.getElementById("circle");
-        console.log(elem.classList);
-        if (elem.classList[1] === undefined || elem.classList[1] === 'circle-scale-down') {
-            elem.classList.remove("circle-scale-down");
-            elem.classList.add("circle-scale-up");
-        } else {
-            elem.classList.remove("circle-scale-up");
-            elem.classList.add("circle-scale-down");
-        }
+        const form = document.getElementById("form");
+        const firstName = document.getElementById("name");
+        const emailAddress = document.getElementById("email");
 
-    }
+        form.addEventListener('submit', function (r) {
+            r.preventDefault();    //to prevent the default function of the submit button to reftesh the page
 
+            const firstNameValue = firstName.value;
+            const emailAddressValue = emailAddress.value;
+
+            window.localStorage.setItem('first-name', firstNameValue);
+            window.localStorage.setItem('email-address', emailAddressValue);
+
+            window.location.href = "#.html";
+        })
+
+    
+
+
+    /* ---------use this code on the form you want to inject the values to----------=
+    
+    const firstName = localstorage.getItem('first-name');
+    const emailAddress = localstorage.getItem('email-address');
+
+    document.getElementById('local-first-name').textContent = firstName;
+    document.getElementById('local-email-address').textContent = emailAddress;
+
+    */
+
+    /* ------ this code passes an object to another page ------------
+    window.localstorage.setItem('myObject', JSON.stringify({fn: firstNameValue, em: emailAddressValue}));
+
+    //-------this goes into the other page:
+    console.log(JSON.parse(localStorage.getItem('myObject')));
+
+    */
+
+    /* ------ this code passes an array to another page ------------
+    window.localstorage.setItem('myArray', JSON.stringify([firstNameValue, emailAddressValue]));
+
+    //-------this goes into the other page:
+    console.log(JSON.parse(localStorage.getItem('myArray')));
+
+    */
+   //Local storage has a capacity and gets filled up really quickly, 
+   //depending on the domain used, so its good to clear the storage after you're done using it like so:
+   //localStorage.clear();
+   //localStorage.remove('myObject');                   //to remove a specific object
+
+   //an alternative to local storage is --> sessionStorage (which automatically clears the storage after each session)
 
 </script>
 
