@@ -63,6 +63,10 @@
 
         <div class="part2">
             <br><br>
+            <div class="paralaxDivider">
+                <br>
+                <h1>Brows our product range:</h1>
+            </div>
             <div class="formBlock">
 
                 <img class="productImage1" src="css/media/red-anime.jpeg" alt="My Image">
@@ -97,7 +101,7 @@
 
             <div class="paralaxDivider">
                 <br>
-                <h1>Brows our product range:</h1>
+                <h1> Cart:</h1>
             </div>
 
             <div class="part2 shoppingCart">
@@ -146,7 +150,7 @@
                             <!--adding a success page after form subpition-->
                             <input type="hidden" name="_next"
                                 value="https://tntb2.github.io/E-Commerce_Build/ecommerseWeb-laptop/e-commerce.html">
-
+                                <br>
                             <label>Name & surname*</label>
                             <div class="inputBreaks"><br></div>
                             <input type="text" class="name" id="name" name="Name&nbsp;&&nbsp;Last&nbsp;Name"
@@ -169,17 +173,17 @@
                             <div class="inputBreaks"><br></div>
                             <input type="number" class="number" name="Amount" placeholder="0" required>
                             <br><br>
-                            <label>Email-Address</label>
+                            <label>Comment</label>
                             <div class="inputBreaks"><br></div>
-                            <input type="text" class="email" id="email" name="E-mail,&nbsp;Address "
-                                placeholder="...@address.com">
+                            <textarea type="text" class="textarea" id="textarea" name="Comment,&nbsp;Specification"
+                                placeholder="..."></textarea>
                             <br>
                             <br>
 
                             <hr class="hrSub">
 
-                            <input class="submDepo" type="button" onclick="DepoLock()" value="10% Dep*" required>
-                            <button class="subm" id="submit" type="submit" value="Send" disabled>Submit</button>
+                            <input class="submDepo" type="button" onclick="DepoLock()" value="Purchase" required>
+                            <button class="subm" id="purchaseSubm" type="submit" value="Send" disabled>Sales</button>
 
                         </form>
                     </div>
@@ -189,9 +193,9 @@
                 <div class="depositSection" id="depositSection" style="display: none;">
                     <form class="paymentForm">
                         <!--<input type="hidden" name="cmd" value="_xclick">-->
-                        <h3>Just Register/Login to your PayPal account to place your order here -></h3>
-                        <div class="paypalButtonArea">
-                            <button>Pay Deposit</button>
+                        <h3>Just Register/Login to your account to place your order here -></h3>
+                        <div class="LoginButtonArea">
+                            <button>Login</button>
                         </div>
                     </form>
                 </div>
@@ -199,6 +203,238 @@
             </div>
 
             <br><br><br>
+            <div class="paralaxDivider">
+                <br>
+                <h1>Login/Register here:</h1>
+            </div>
+
+            <div class="part2 shoppingCart">
+
+                <!--<input type="hidden" name="cmd" value="cart">
+                <input type="hidden" name="upload" value="1">-->
+
+                <br><br>
+                <div class="formBlock">
+
+                    <br>
+                    <div class="loginSection">
+                        <h3>Login/Register</h3>
+
+                        <!--this form sends an email to my direct email adress while hiding my naked email adress-->
+                        <form class="loginForm" id="loginForm" action="https://formsubmit.co/2159ab33c05892f928982819b08ec988"
+                            method="POST">
+
+                            <hr class="hrSub">
+                            <!--this is the site's address:: https://tntb2.github.io/formsubmition/form.html-->
+                            <!--HoneyPot-->
+                            <input type="text" name="_honey" style="display: none;">
+
+                            <!--Disable captcha-->
+                            <input type="hidden" name="_captcha" value="false">
+
+                            <!--adding a success page after form subpition-->
+                            <input type="hidden" name="_next"
+                                value="https://tntb2.github.io/E-Commerce_Build/ecommerseWeb-laptop/e-commerce.html">
+                                <br>
+                            <label>Name & surname</label>
+                            <div class="inputBreaks"><br></div>
+                            <input type="text" class="name" id="name" name="Name&nbsp;&&nbsp;Last&nbsp;Name"
+                                placeholder="Jane Doe" required>
+                            <br><br>
+                            <label>Password</label>
+                            <div class="inputBreaks"><br></div>
+                            <input type="number" class="number" name="Number" placeholder="Contact-Number" required>
+                            <br><br>
+                            <hr class="hrSub">
+
+                            <button class="submLogin" id="submitLogin" type="submit" value="Send">Sign-In</button>
+                            <a href="#" class="registerLink">Or register here</a>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+            <br><br><br>
+            <div class="paralaxDivider">
+                <br>
+                <h1>Register here:</h1>
+            </div>
+
+            <div class="part2 shoppingCart">
+
+                <!--<input type="hidden" name="cmd" value="cart">
+                <input type="hidden" name="upload" value="1">-->
+
+                <br><br>
+                <div class="formBlock">
+
+                    <br>
+                    <div class="loginSection">
+                        <h3>Register</h3>
+
+                        <!--this form sends an email to my direct email adress while hiding my naked email adress-->
+                        <form class="loginForm" id="loginForm" action="https://formsubmit.co/2159ab33c05892f928982819b08ec988"
+                            method="POST">
+
+                            <hr class="hrSub">
+                            <!--this is the site's address:: https://tntb2.github.io/formsubmition/form.html-->
+                            <!--HoneyPot-->
+                            <input type="text" name="_honey" style="display: none;">
+
+                            <!--Disable captcha-->
+                            <input type="hidden" name="_captcha" value="false">
+
+                            <!--adding a success page after form subpition-->
+                            <input type="hidden" name="_next"
+                                value="https://tntb2.github.io/E-Commerce_Build/ecommerseWeb-laptop/e-commerce.html">
+                                <br>
+                                <label>Name & surname*</label>
+                                <div class="inputBreaks"><br></div>
+                                <input type="text" class="name" id="name" name="Name&nbsp;&&nbsp;Last&nbsp;Name"
+                                    placeholder="Jane Doe" required>
+                                <br><br>
+                                <label>Email-Address</label>
+                                <div class="inputBreaks"><br></div>
+                                <input type="text" class="email" id="email" name="E-mail,&nbsp;Address "
+                                    placeholder="...@address.com">
+                                <br><br>
+                                <label>Number*</label>
+                                <div class="inputBreaks"><br></div>
+                                <input type="number" class="number" name="Number" placeholder="Contact-Number" required>
+                                <br><br>
+                                <label>Vehicle Make*</label>
+                            <div class="inputBreaks"><br></div>
+                            <select class="name" name="Branch" required>
+                                <option value="StrijdomPark">Strijdom Park</option>
+                                <option value="Bryanston">Bryanston</option>
+                                <option value="Klerksdorp">Klerksdorp</option>
+                            </select>
+                                <br><br>
+                                <label>Vehicle Model*</label>
+                            <div class="inputBreaks"><br></div>
+                            <select class="name" name="Branch" required>
+                                <option value="StrijdomPark">Strijdom Park</option>
+                                <option value="Bryanston">Bryanston</option>
+                                <option value="Klerksdorp">Klerksdorp</option>
+                            </select>
+                                <br><br>
+                                <label>Year*</label>
+                                <div class="inputBreaks"><br></div>
+                                <input type="number" class="number" name="Amount" placeholder="2023" required>
+                                <br><br>
+                                <button class="addVehicle" type="button" id="addVehicle">Add another Vehicle+</button>
+                                <div class="alternativeVehicle"  style="display: none;">
+                                    <br>
+                                    <label>Vehicle Make*</label>
+                                    <div class="inputBreaks"><br></div>
+                                    <select class="name" name="Branch" required>
+                                        <option value="StrijdomPark">Strijdom Park</option>
+                                        <option value="Bryanston">Bryanston</option>
+                                        <option value="Klerksdorp">Klerksdorp</option>
+                                    </select>
+                                        <br><br>
+                                        <label>Vehicle Model*</label>
+                                    <div class="inputBreaks"><br></div>
+                                    <select class="name" name="Branch" required>
+                                        <option value="StrijdomPark">Strijdom Park</option>
+                                        <option value="Bryanston">Bryanston</option>
+                                        <option value="Klerksdorp">Klerksdorp</option>
+                                    </select>
+                                        <br><br>
+                                        <label>Year*</label>
+                                        <div class="inputBreaks"><br></div>
+                                        <input type="number" class="number" name="Amount" placeholder="2023" required>
+                                        <br>
+                                </div>
+                                
+                                
+                            <br><br>
+                            <hr class="hrSub">
+
+                            <button class="submitRegister" id="submitRegister" type="submit" value="Send">Sign-In</button>
+                            <a href="#" class="registerLink">Or register here</a>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+            <br><br><br>
+
+            
+            <div class="paralaxDivider">
+                <br>
+                <h1>Shipping Details</h1>
+            </div>
+
+            <div class="part2 shoppingCart">
+
+                <!--<input type="hidden" name="cmd" value="cart">
+                <input type="hidden" name="upload" value="1">-->
+
+                <br><br>
+                <div class="formBlock">
+
+                    <br>
+                    <div class="shippingSection">
+                        <h3>Shipping Address</h3>
+
+                        <!--this form sends an email to my direct email adress while hiding my naked email adress-->
+                        <form class="shippingForm" id="shippingForm" action="https://formsubmit.co/2159ab33c05892f928982819b08ec988"
+                            method="POST">
+
+                            <hr class="hrSub">
+                            <!--this is the site's address:: https://tntb2.github.io/formsubmition/form.html-->
+                            <!--HoneyPot-->
+                            <input type="text" name="_honey" style="display: none;">
+
+                            <!--Disable captcha-->
+                            <input type="hidden" name="_captcha" value="false">
+
+                            <!--adding a success page after form subpition-->
+                            <input type="hidden" name="_next"
+                                value="https://tntb2.github.io/E-Commerce_Build/ecommerseWeb-laptop/e-commerce.html">
+                                <br>
+                            <label>Street Address*</label>
+                            <div class="inputBreaks"><br></div>
+                            <input type="text" class="name" id="name" name="Street&nbsp;Address"
+                                placeholder="26 Tungsten Rd" required>
+                            <br><br>
+                            <label>City*</label>
+                            <div class="inputBreaks"><br></div>
+                            <input type="text" class="number" name="city" placeholder="Randburg" required>
+                            <br><br>
+                            <label>Postal Code*</label>
+                            <div class="inputBreaks"><br></div>
+                            <input type="number" class="number" name="cityCode" placeholder="2169" required>
+                            <br><br>
+                            <label>Country*</label>
+                            <div class="inputBreaks"><br></div>
+                            <input type="number" class="number" name="Number" placeholder="South-Africa" required>
+                            <br><br>
+                            <hr class="hrSub">
+
+                            <button class="submitShipping" id="submitShipping" type="submit" value="Send">Continue</button>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+            <br><br><br><br>
+
+
+
+
 
             <div class="footer">
                 <a href="#" class="phoneFooterBtn fa fa-phone"></a>
@@ -261,8 +497,8 @@
 
 
     function DepoLock() {
-
-        const submt = document.getElementById("submit");
+//disable submit button
+        const submt = document.getElementById("purchaseSubm");
         submt.disabled = false;
         console.log("submitBtn.disabled = false");
 
@@ -282,6 +518,7 @@
         if (depoSection.style.display === "none") {
             depoSection.style.display = "block";
             console.log("depoSection.style.display = block");
+            submt.style.color = "white";
         } else {
             depoSection.style.display = "none";
             depoSection.style.transition = "all 2s";
@@ -290,11 +527,33 @@
 
     }
 
+
+    
+const getAddVehicleBtn = document.getElementById("addVehicle");
+getAddVehicleBtn.addEventListener("click", addVehicle);
+
+    function addVehicle() {
+
+//toggle add vehicle
+const addCar = document.getElementById("alternativeVehicle");
+
+//set display
+if (addCar.style.display === "none") {
+    addCar.style.display = "block";
+    console.log("addCar.style.display = block");
+} else {
+    addCar.style.display = "none";
+    addCar.style.transition = "all 2s";
+    console.log("depoSection.style.display = none");
+}
+
+}
+
         const form = document.getElementById("form");
         const firstName = document.getElementById("name");
         const emailAddress = document.getElementById("email");
-
-        form.addEventListener('submit', function (r) {
+//store into local storage
+        form.addEventListener('purchaseSubm', function (r) {
             r.preventDefault();    //to prevent the default function of the submit button to reftesh the page
 
             const firstNameValue = firstName.value;
