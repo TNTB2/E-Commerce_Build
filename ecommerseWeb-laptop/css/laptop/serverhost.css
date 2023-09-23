@@ -140,7 +140,7 @@ h1 {
 }
 
 
-/*----------------------------------------Download Btn & References/ Part3-----------------------------------------*/
+/*----------------------------------------deposit section/ Part3-----------------------------------------*/
 
 .depositSection {
     width: 70%;
@@ -196,7 +196,7 @@ h1 {
     margin-left: 10%;
 }
 
-.paypalButtonArea {
+.LoginButtonArea {
     margin-top: -6.5%;
     width: 30%;
     height: 100%;
@@ -204,7 +204,7 @@ h1 {
     margin-left: 10%;
 }
 
-.paypalButtonArea button {
+.LoginButtonArea button {
     color: #cfcfcf;
     font-weight: bolder;
     padding: 5%;
@@ -213,3 +213,122 @@ h1 {
     border-radius: 5%;
     border: solid 5px #d89538;
 }
+
+
+/*----------------------------------------Login & register/ Part4-----------------------------------------*/
+
+
+.loginSection {
+    float: left;
+    width: 60%;
+    height: 100%;
+    margin-left: 10%;
+}
+
+.loginSection h3 {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: -50px;
+    font-size: x-large;
+    margin-left: 50%;
+    transform: translateX(-15%);
+}
+
+.loginForm {
+    color: #ffffff;
+    text-align: right;
+    padding: 30px;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -45px;
+}
+
+.inputBreaks {
+    display: none;
+}
+
+.loginForm input {
+    transform: translateX(15%);
+    width: 30%;
+}
+
+.submLogin, .submitRegister {
+    color: #ffffff;
+    background-color: #000000;
+    border: solid 2px #641313;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    transform: translateX(-40%);
+}
+
+.registerLink {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.registerLink:hover {
+    color: #eaab2d;
+    text-decoration: underline;
+}
+
+.addVehicle {
+    color: #cfcfcf;
+    background-color: #131313;
+    border-radius: 5%;
+    border: solid 2px #d89538;
+}
+
+/*----------------------------------------shipping/ Part6-----------------------------------------*/
+
+
+.shippingSection {
+    float: left;
+    width: 60%;
+    height: 100%;
+    margin-left: 10%;
+}
+
+.shippingSection h3 {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: -50px;
+    font-size: x-large;
+    margin-left: 50%;
+    transform: translateX(-15%);
+}
+
+.shippingForm {
+    color: #ffffff;
+    text-align: right;
+    padding: 30px;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -45px;
+}
+
+.inputBreaks {
+    display: none;
+}
+
+.shippingForm input {
+    transform: translateX(15%);
+    width: 30%;
+}
+
+.submitShipping {
+    color: #ffffff;
+    background-color: #000000;
+    border: solid 2px #641313;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    transform: translateX(-60%);
+}
+
