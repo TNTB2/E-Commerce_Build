@@ -80,7 +80,7 @@
                         the latest
                         and most innovative design pattern, this would make the most perfect gift. It lasts a lifetime
                         with the guarantee to
-                        back that. Dont miss out on this special deal! <br> <span>Financing is available at standard
+                        back that. Dont miss out on this special deal! <br> <span class="financingInfo">Financing is available at standard
                             rates of
                             4%pm.</span></p>
 
@@ -89,14 +89,45 @@
                     <br>
                     <hr>
 
-                    <h2>More on our supply:</h2>
+                    <div class="productDetails1">
+                        <div class="additionalInfo">
+                            <h4>Price: R<span class="price">3000.00</span></h4>
+                            <h5>Credit: R<span class="creditPrice">300.00</span>p/m</h5>
+                            <h6>Subscription-></h6>
+                        </div>
+                        <div class="prodCodes">
+                            <h4>SKU: <span class="sku">010101</span></h4>
+                            <h5>Cattegiory: <span class="category">Products</span></h5>
+                            <h5>Tag: <span class="tag">Prod</span></h5>
+                        </div>
+                    </div>
 
-                    <div class="suplier1"></div>
-                    <div class="suplier2"></div>
-                    <div class="suplier3"></div>
-                    <div class="suplier4"></div>
+                    <br>
+                    <br><br>
+                    <br><br><br>
+                    <br><br>
+                    <br>
+
+                    <div class="prodLinks">
+                        <a href="#" class="additionalProductInfo">More Info</a>
+                        <a href="#" class="additionalProductInfo">Videos</a>
+                        <a href="#" class="additionalProductInfo">Reviews</a>
+                    </div>
+                    <br><br><br>
+                    <hr>
+
                 </div>
 
+            </div>
+            
+            <div class="alternativeProducts">
+                <h2>More on our supply:</h2>
+    
+                <div class="suplier1"></div>
+                <div class="suplier2"></div>
+                <div class="suplier3"></div>
+                <div class="suplier4"></div>
+                
             </div>
 
             <div class="paralaxDivider">
@@ -104,7 +135,7 @@
                 <h1> Cart:</h1>
             </div>
 
-            <div class="part2 shoppingCart">
+            <div class="part3 shoppingCart">
 
                 <!--<input type="hidden" name="cmd" value="cart">
                 <input type="hidden" name="upload" value="1">-->
@@ -151,29 +182,29 @@
                             <input type="hidden" name="_next"
                                 value="https://tntb2.github.io/E-Commerce_Build/ecommerseWeb-laptop/e-commerce.html">
                                 <br>
-                            <label>Name & surname*</label>
+                            <label>Pricing: </label>
                             <div class="inputBreaks"><br></div>
-                            <input type="text" class="name" id="name" name="Name&nbsp;&&nbsp;Last&nbsp;Name"
-                                placeholder="Jane Doe" required>
-                            <br><br>
-                            <label>Number*</label>
-                            <div class="inputBreaks"><br></div>
-                            <input type="number" class="number" name="Number" placeholder="Contact-Number" required>
+                            <label>R </label>
+                            <select class="Price" name="Payment" required>
+                                <option value="Straight">3000.00 ZAR</option>
+                                <option value="Credit">300.00 p/m</option>
+                                <option value="Subscription">150.00 subscription</option>
+                            </select>
                             <br><br>
                             <label>Colour:* </label>
                             <div class="inputBreaks"><br></div>
-                            <input type="radio" id="blue" class="colorRadio" name="Blue" value="Blue">
+                            <input type="radio" id="blue" class="colorRadio" name="Color" value="Blue">
                             <label for="blue">Blue</label>
                             <br>
                             <div class="inputBreaks"><br></div>
-                            <input type="radio" id="red" class="colorRadio" name="Red" value="Red">
+                            <input type="radio" id="red" class="colorRadio" name="Color" value="Red">
                             <label for="red">Red</label>
                             <br><br>
                             <label>Amount:*</label>
                             <div class="inputBreaks"><br></div>
-                            <input type="number" class="number" name="Amount" placeholder="0" required>
+                            <input type="number" class="number" name="Amount" placeholder="0" min="0" required>
                             <br><br>
-                            <label>Comment</label>
+                            <label>Special Request</label>
                             <div class="inputBreaks"><br></div>
                             <textarea type="text" class="textarea" id="textarea" name="Comment,&nbsp;Specification"
                                 placeholder="..."></textarea>
@@ -208,7 +239,7 @@
                 <h1>Login/Register here:</h1>
             </div>
 
-            <div class="part2 shoppingCart">
+            <div class="part4 shoppingCart">
 
                 <!--<input type="hidden" name="cmd" value="cart">
                 <input type="hidden" name="upload" value="1">-->
@@ -263,7 +294,7 @@
                 <h1>Register here:</h1>
             </div>
 
-            <div class="part2 shoppingCart">
+            <div class="part5 shoppingCart">
 
                 <!--<input type="hidden" name="cmd" value="cart">
                 <input type="hidden" name="upload" value="1">-->
@@ -322,11 +353,17 @@
                             </select>
                                 <br><br>
                                 <label>Year*</label>
-                                <div class="inputBreaks"><br></div>
-                                <input type="number" class="number" name="Amount" placeholder="2023" required>
-                                <br><br>
-                                <button class="addVehicle" type="button" id="addVehicle">Add another Vehicle+</button>
-                                <div class="alternativeVehicle"  style="display: none;">
+                            <div class="inputBreaks"><br></div>
+                            <select class="name" name="Year" required>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                            </select>
+                                <br>
+
+                                <div id="alternativeVehicle"  style="display: none;">
+                                    <br>
+                                    <hr>
                                     <br>
                                     <label>Vehicle Make*</label>
                                     <div class="inputBreaks"><br></div>
@@ -345,17 +382,22 @@
                                     </select>
                                         <br><br>
                                         <label>Year*</label>
-                                        <div class="inputBreaks"><br></div>
-                                        <input type="number" class="number" name="Amount" placeholder="2023" required>
+                            <div class="inputBreaks"><br></div>
+                            <select class="name" name="Year" required>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                            </select>
                                         <br>
                                 </div>
-                                
+                                <br>
+                                <button class="addVehicle" type="button" id="addVehicle">+Add another Vehicle</button>
                                 
                             <br><br>
                             <hr class="hrSub">
 
-                            <button class="submitRegister" id="submitRegister" type="submit" value="Send">Sign-In</button>
-                            <a href="#" class="registerLink">Or register here</a>
+                            <button class="submitRegister" id="submitRegister" type="submit" value="Send">Sign-Up</button>
+                            <a href="#" class="registerLink">Or login here</a>
                         </form>
                     </div>
 
@@ -370,7 +412,7 @@
                 <h1>Shipping Details</h1>
             </div>
 
-            <div class="part2 shoppingCart">
+            <div class="part6 shoppingCart">
 
                 <!--<input type="hidden" name="cmd" value="cart">
                 <input type="hidden" name="upload" value="1">-->
@@ -424,6 +466,187 @@
                 </div>
 
             </div>
+
+            <br><br><br>
+
+            
+            <div class="paralaxDivider">
+                <br>
+                <h1>Place Order:</h1>
+            </div>
+
+            <div class="part7 order">
+
+                <!--<input type="hidden" name="cmd" value="cart">
+                <input type="hidden" name="upload" value="1">-->
+
+                <br><br>
+                <div class="OrderFormBlock">
+
+                    <br>
+                    <div class="orderAddress">
+                        <h3>Delivery Address</h3>
+
+                        <!--this form sends an email to my direct email adress while hiding my naked email adress-->
+                        <form class="orderadd" id="shippingForm" action="https://formsubmit.co/2159ab33c05892f928982819b08ec988"
+                            method="POST">
+
+                            <hr class="hrSub">
+                            <!--this is the site's address:: https://tntb2.github.io/formsubmition/form.html-->
+                            <!--HoneyPot-->
+                            <input type="text" name="_honey" style="display: none;">
+
+                            <!--Disable captcha-->
+                            <input type="hidden" name="_captcha" value="false">
+
+                            <!--adding a success page after form subpition-->
+                            <input type="hidden" name="_next"
+                                value="https://tntb2.github.io/E-Commerce_Build/ecommerseWeb-laptop/e-commerce.html">
+                                <br>
+                            <label>Street Address:</label>
+                            <div class="inputBreaks"><br></div>
+                            <label><span>"26 Tungsten Rd"</span></label>
+                            <br><br>
+                            <hr class="hrSub">
+
+                            <h4>XXX</h4>
+                        </form>
+                    </div>
+                    
+                    <div class="orderPaymentPlan">
+                        <h3>Payment Method</h3>
+
+                        <!--this form sends an email to my direct email adress while hiding my naked email adress-->
+                        <form class="orderPlan" id="shippingForm" action="https://formsubmit.co/2159ab33c05892f928982819b08ec988"
+                            method="POST">
+
+                            <hr class="hrSub">
+                            <!--this is the site's address:: https://tntb2.github.io/formsubmition/form.html-->
+                            <!--HoneyPot-->
+                            <input type="text" name="_honey" style="display: none;">
+
+                            <!--Disable captcha-->
+                            <input type="hidden" name="_captcha" value="false">
+
+                            <!--adding a success page after form subpition-->
+                            <input type="hidden" name="_next"
+                                value="https://tntb2.github.io/E-Commerce_Build/ecommerseWeb-laptop/e-commerce.html">
+                                <br>
+                            <label>Method:</label>
+                            <div class="inputBreaks"><br></div>
+                            <label><span>"PayPal"</span></label>
+                            <br><br>
+                            <hr class="hrSub">
+
+                            <h4>XXX</h4>
+                        </form>
+                    </div>
+
+                    <div class="orderItem-s">
+                        <h3>Order Items</h3>
+
+                        <!--this form sends an email to my direct email adress while hiding my naked email adress-->
+                        <form class="orderItem" id="shippingForm" action="https://formsubmit.co/2159ab33c05892f928982819b08ec988"
+                            method="POST">
+
+                            <hr class="hrSub">
+                            <img class="productImage1Checkout1" src="css/media/red-anime.jpeg" alt="My Image">
+                            <label><p>This is my Product Description</p></label>
+                            <label><span>[<span>0</span>]</span></label>
+                            <br><br>
+
+                            <hr class="hrSub">
+
+                            <h4>R<span>3000.00</span></h4>
+                            <hr class="hrSub">
+
+                            <hr class="hrSub">
+                            <img class="productImage1Checkout1" src="css/media/red-anime.jpeg" alt="My Image">
+                            <label><p>This is my Product Description</p></label>
+                            <label><span>[<span>0</span>]</span></label>
+                            <br><br>
+
+                            <hr class="hrSub">
+
+                            <h4>R<span>3000.00</span></h4>
+                            <hr class="hrSub">
+
+                            <hr class="hrSub">
+                            <img class="productImage1Checkout1" src="css/media/red-anime.jpeg" alt="My Image">
+                            <label><p>This is my Product Description</p></label>
+                            <label><span>[<span>0</span>]</span></label>
+                            <br><br>
+
+                            <hr class="hrSub">
+
+                            <h4>R<span>3000.00</span></h4>
+                            <hr class="hrSub">
+                        </form>
+                    </div>
+
+
+                    <div class="paymentDisplay">
+                        <h3>Order Summary</h3>
+
+                        <!--this form sends an email to my direct email adress while hiding my naked email adress-->
+                        <form class="paymentPlanSummery" id="shippingForm" action="https://formsubmit.co/2159ab33c05892f928982819b08ec988"
+                            method="POST">
+
+                            <hr class="hrSub">
+                            <!--this is the site's address:: https://tntb2.github.io/formsubmition/form.html-->
+                            <!--HoneyPot-->
+                            <input type="text" name="_honey" style="display: none;">
+
+                            <!--Disable captcha-->
+                            <input type="hidden" name="_captcha" value="false">
+
+                            <!--adding a success page after form subpition-->
+                            <input type="hidden" name="_next"
+                                value="https://tntb2.github.io/E-Commerce_Build/ecommerseWeb-laptop/e-commerce.html">
+                                <br>
+                            <label>Items</label>
+                            <div class="inputBreaks"><br></div>
+                            <label>R<span>9000.00</span></label>
+                            <br><br>
+
+                            <label>Shipping:</label>
+                            <div class="inputBreaks"><br></div>
+                            <label>R<span>600.00</span></label>
+                            <br><br>
+
+                            <label>Tax:</label>
+                            <div class="inputBreaks"><br></div>
+                            <label>R<span>30.00</span></label>
+                            <br><br>
+                            <hr class="hrSub">
+
+                            <label>Total:</label>
+                            <div class="inputBreaks"><br></div>
+                            <label>R<span>9630.00</span></label>
+                            <br><br>
+                            <hr class="hrSub">
+
+                            <h4>XXX</h4>
+                        </form>
+                    </div>
+
+                    <div class="process">
+                        <div class="edit">
+                            <button class="editOrder">Edit Order</button>
+                        </div>
+                        <br>
+                        <div class="submitTotal">
+                            <button class="submitOrder">Order Items</button>
+                        </div>
+                    </div>
+                   
+
+
+                </div>
+
+            </div>
+
+
 
 
 
@@ -528,22 +751,27 @@
     }
 
 
-    
+    //alternative vehicle button function
 const getAddVehicleBtn = document.getElementById("addVehicle");
 getAddVehicleBtn.addEventListener("click", addVehicle);
 
     function addVehicle() {
+        
+const getAddVehicleBtn = document.getElementById("addVehicle");
+console.log("add alternative vehicle...");
 
-//toggle add vehicle
+//toggle add vehicle section
 const addCar = document.getElementById("alternativeVehicle");
 
 //set display
 if (addCar.style.display === "none") {
     addCar.style.display = "block";
+    getAddVehicleBtn.textContent = "-Remove alternative Vehicle";
     console.log("addCar.style.display = block");
 } else {
     addCar.style.display = "none";
     addCar.style.transition = "all 2s";
+    getAddVehicleBtn.textContent = "+Add another Vehicle";
     console.log("depoSection.style.display = none");
 }
 
