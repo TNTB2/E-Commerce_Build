@@ -109,13 +109,76 @@
                     <br>
 
                     <div class="prodLinks">
-                        <a href="#" class="additionalProductInfo">More Info</a>
-                        <a href="#" class="additionalProductInfo">Videos</a>
-                        <a href="#" class="additionalProductInfo">Reviews</a>
+                        <button id="info" class="additionalProductInfo">More Info</button>
+                        <button id="vid" class="additionalProductVideo">Videos</button>
+                        <button id="rev" class="additionalProductReviews">Reviews</button>
                     </div>
                     <br><br><br>
                     <hr>
 
+                </div>
+
+                <div class="moreInfo" id="moreInfo" style="display: none;">
+                    <div class="ProductInfo">
+                        <!--<input type="hidden" name="cmd" value="_xclick">-->
+                        <h3>Info</h3>
+                        <div class="ProductInfoList">
+                            <ul>
+                                <li>high speed</li>
+                                <li>low consumption</li>
+                                <li>warranty</li>
+                            </ul>
+                        </div>
+                        <h3>Spesifications</h3>
+                        <div class="ProductSpecsList">
+                            <ul>
+                                <li>Weight: <span>30</span>kg</li>
+                                <li>Dimensions: <span>30</span>x<span>30</span>x<span>30</span>mm</li>
+                                <li>Materials used: <span>Nylon</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video" id="video" style="display: none;">
+                    <div class="ProductVideo">
+                        <!--<input type="hidden" name="cmd" value="_xclick">-->
+                        <h3>Video Content:</h3>
+                        <div class="ProductVid">
+                           <!--<video>this video canot be displayed yet...</video>-->
+                           <img src="css/media/red-anime.jpeg" alt="image Placeholder for vider" width="100%" height="100%">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reviews" id="reviews" style="display: none;">
+                    <div class="productReviews">
+                        <!--<input type="hidden" name="cmd" value="_xclick">-->
+                        <h3>Product Reviews:</h3>
+                        <div class="productReview">
+                            <div class="review1">
+                                <label><span>&#x2605; &#x2605; &#x2605; &#x2605; &#x2605;</span></label>
+                           <hr>
+                              <span class="review1-1">This is the first product review available at the moment...</span>
+                           <hr>
+                           <p>~John Conner</p>
+                            </div>
+
+                            <br>
+
+                            <div class="review1">
+                                <label><span>&#x2605; &#x2605; &#x2605; &#x2605;</span> &#x2605;</label>
+                           <hr>
+                              <span class="review1-1">This is the second and final product review available at the moment...</span>
+                           <hr>
+                           <p>~Elvis Presley</p>
+                            </div>
+
+                            <br>
+                        </div>
+                        <br>
+                            <button class="leaveReview">Leave a review</button>
+                    </div>
                 </div>
 
             </div>
@@ -141,7 +204,7 @@
                 <input type="hidden" name="upload" value="1">-->
 
                 <br><br>
-                <div class="formBlock">
+                <div class="formBlock formBlockShoppingCart">
 
                     <img class="productImage1" src="css/media/red-anime.jpeg" alt="My Image">
 
@@ -224,7 +287,7 @@
                 <div class="depositSection" id="depositSection" style="display: none;">
                     <form class="paymentForm">
                         <!--<input type="hidden" name="cmd" value="_xclick">-->
-                        <h3>Just Register/Login to your account to place your order here -></h3>
+                        <h3>Please Register/Login to your account to place your order here -></h3>
                         <div class="LoginButtonArea">
                             <button>Login</button>
                         </div>
@@ -233,13 +296,23 @@
 
             </div>
 
+            <div class="removeFromCart">
+                <button class="removeItem">X</button>
+            </div>
+
+            <br><br>
+
+            <div class="cartParagraph">
+                <p>Dont be shy to contact our sales team to specify what you need</p>
+            </div>
+
             <br><br><br>
             <div class="paralaxDivider">
                 <br>
                 <h1>Login/Register here:</h1>
             </div>
 
-            <div class="part4 shoppingCart">
+            <div class="part4">
 
                 <!--<input type="hidden" name="cmd" value="cart">
                 <input type="hidden" name="upload" value="1">-->
@@ -294,7 +367,7 @@
                 <h1>Register here:</h1>
             </div>
 
-            <div class="part5 shoppingCart">
+            <div class="part5">
 
                 <!--<input type="hidden" name="cmd" value="cart">
                 <input type="hidden" name="upload" value="1">-->
@@ -412,7 +485,7 @@
                 <h1>Shipping Details</h1>
             </div>
 
-            <div class="part6 shoppingCart">
+            <div class="part6">
 
                 <!--<input type="hidden" name="cmd" value="cart">
                 <input type="hidden" name="upload" value="1">-->
@@ -749,6 +822,76 @@
         }
 
     }
+
+
+
+    function additionalProd() {
+        
+        const i = document.getElementById("info");
+        const v = document.getElementById("vid");
+        const r = document.getElementById("rev");
+
+        i.onclick = function () {
+            console.log("i.clicked");
+            //toggle additional prod Section
+            const info = document.getElementById("moreInfo");
+            const video = document.getElementById("video");
+            const review = document.getElementById("reviews");
+
+            //set display
+            if (info.style.display === "none") {
+                info.style.display = "block";
+                video.style.display = "none";
+                review.style.display = "none";
+                console.log("info.style.display = block");
+             } else {
+                info.style.display = "none";
+                console.log("info.style.display = none");
+            }
+        } 
+            
+        v.onclick = function () {
+            console.log("v.clicked");
+            //toggle additional prod Section
+            const info = document.getElementById("moreInfo");
+            const video = document.getElementById("video");
+            const review = document.getElementById("reviews");
+
+            //set display
+            if (video.style.display === "none") {
+                video.style.display = "block";
+                info.style.display = "none";
+                review.style.display = "none";
+                console.log("video.style.display = block");
+            } else {
+                video.style.display = "none";
+                console.log("video.style.display = none");
+            }
+        } 
+            
+        r.onclick = function () {
+            console.log("r.clicked");
+            //toggle additional prod Section
+            const info = document.getElementById("moreInfo");
+            const video = document.getElementById("video");
+            const review = document.getElementById("reviews");
+
+            //set display
+            if (review.style.display === "none") {
+                review.style.display = "block";
+                info.style.display = "none";
+                video.style.display = "none";
+                console.log("review.style.display = block");
+            } else {
+                review.style.display = "none";
+                review.style.transition = "all 2s";
+                console.log("review.style.display = none");
+            }
+        }
+    }
+
+    additionalProd();
+        
 
 
     //alternative vehicle button function
