@@ -1,0 +1,118 @@
+.welcome-message {
+    margin-bottom: 20px;
+    width: 100%;
+    margin-left: -25px;
+    background-color: #a7b45c3a;
+}
+
+.gallery {
+    display: table;
+    width: 70%;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-price {
+    color: #b29ec1;
+    font-weight: 900;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #b29ec16d;
+    color: white;
+    width: 100px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #b29ec1;
+}
+
+
+
+
+.subcategory-section {
+    margin-bottom: 40px;
+}
+
+
+.subcategory-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Automatically adjust columns based on screen size */
+    gap: 20px;
+}
+
+.subcategory-row .card {
+    flex: 1 1 200px;
+    /* Ensures cards take up equal space and wrap to next row if needed */
+    max-width: calc(100%);
+    /* Each card will take up 25% width minus the gap, adjust as needed */
+}
+
+@media screen and (min-width: 1024px) {
+    .subcategory-row {
+        grid-template-columns: repeat(4, 1fr); /* Limit to 4 columns on desktop */
+    }
+}
+
+/* Responsive: 2 columns for tablets */
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .subcategory-row .card {
+        max-width: calc(50% - 20px);
+        /* For tablets: 2 cards per row */
+    }
+}
+
+/* Responsive: 1 column for mobile */
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .subcategory-row .card {
+        max-width: calc(100% - 20px);
+        /* For mobile: 1 card per row */
+    }
+}

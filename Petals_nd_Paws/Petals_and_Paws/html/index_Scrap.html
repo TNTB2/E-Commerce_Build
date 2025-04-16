@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../styles/navigation.css">
+    <link rel="stylesheet" type="text/css" href="../styles/content.css">
+    <link rel="stylesheet" type="text/css" href="../styles/cart.css">
+    <link rel="stylesheet" type="text/css" href="../styles/footer.css">
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+
+    <title>Petals & Paws</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            /*rgb(190, 211, 155)*/
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+            /* Center the text horizontally */
+            margin: 0 auto;
+            /* Optional: Add margins if you want to add space */
+            padding: 20px;
+            color: #a7b45c;
+            font-size: 3em;
+            font-weight: bolder;
+            background-color: none;
+        }
+
+        .divider {
+            width: 80%;
+            height: 2px;
+            background-color: #a7b45c;
+            margin: 50px auto;
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            document.querySelector(".menu").classList.toggle("active");
+        }
+    </script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-title">Petals&Paws</div>
+        <img src="../media/NavigationMenu/logoDepitched_Floppy.png" alt="Logo" class="logo">
+        <div class="burger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="menu">
+            <a href="../html/cart.html" class="nav-item nav_align cart-link">🛒</a>
+            <a href="../html/index.html" class="nav-item nav_align">Home</a>
+
+            <!-- Dropdown Menu -->
+            <div class="dropdown">
+                <a href="#" class="nav-item dropdown-toggle">Products</a>
+                <div class="dropdown-menu">
+                    <a href="../html/dog_products.html">Dog Products</a>
+                    <a href="../html/cat_products.html">Cat Products</a>
+                    <a href="../html/pet_products.html">Home Products</a>
+                </div>
+            </div>
+
+            <a href="../html/contact.html" class="nav-item nav_align">Contact</a>
+        </div>
+    </nav>
+
+    <script src="../scripts/toggleNavMenu.js"></script>
+
+
+    <div class="content">
+        <section class="welcome-section">
+            <h1 class="welcome-message">Welcome your pet friendly accessory shop!</h1>
+            <div class="slider">
+                <div>
+                    <img src="../media/MoodBoard/WhatsApp Image 2025-03-14 at 17.20.28 (1).jpeg" alt="Slide 1">
+                </div>
+                <div>
+                    <img src="../media/MoodBoard/WhatsApp Image 2025-03-14 at 17.20.28.jpeg" alt="Slide 2">
+                </div>
+                <div>
+                    <img src="../media/MoodBoard/WhatsApp Image 2025-03-14 at 17.20.29 (1).jpeg" alt="Slide 3">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- jQuery & Slick JS -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $('.slider').slick({
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    dots: true,
+                    arrows: false,
+                    infinite: true,
+                    speed: 500,
+                    slidesToShow: 1,
+                    adaptiveHeight: true
+                });
+            });
+        </script>
+
+
+
+
+        <div class="divider"></div>
+
+
+
+
+        <section class="product-section">
+            <h2>Our Latest Products:</h2>
+            <div class="product-slider">
+                <div class="product">
+                    <div class="card" onclick="openModal('Product 1', '../media/NavigationMenu/PawP.png', '$29.99')">
+                        <img src="../media/NavigationMenu/PawP.png" alt="Product 1">
+                        <div class="card-content">
+                            <div class="card-title">Product 1</div>
+                            <div class="card-price">R29.99</div>
+                            <a href="#" class="btn"
+                                onclick="addToCart(event, 'Product 1', '../media/NavigationMenu/PawP.png', '$29.99')">
+                                Add to Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="card" onclick="openModal('Product 1', '../media/NavigationMenu/PawP.png', '$29.99')">
+                        <img src="../media/NavigationMenu/PawP.png" alt="Product 1">
+                        <div class="card-content">
+                            <div class="card-title">Product 1</div>
+                            <div class="card-price">R29.99</div>
+                            <a href="#" class="btn"
+                                onclick="addToCart(event, 'Product 1', '../media/NavigationMenu/PawP.png', '$29.99')">
+                                Add to Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="card" onclick="openModal('Product 1', '../media/NavigationMenu/PawP.png', '$29.99')">
+                        <img src="../media/NavigationMenu/PawP.png" alt="Product 1">
+                        <div class="card-content">
+                            <div class="card-title">Product 1</div>
+                            <div class="card-price">R29.99</div>
+                            <a href="#" class="btn"
+                                onclick="addToCart(event, 'Product 1', '../media/NavigationMenu/PawP.png', '$29.99')">
+                                Add to Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="card" onclick="openModal('Product 1', '../media/NavigationMenu/PawP.png', '$29.99')">
+                        <img src="../media/NavigationMenu/PawP.png" alt="Product 1">
+                        <div class="card-content">
+                            <div class="card-title">Product 1</div>
+                            <div class="card-price">R29.99</div>
+                            <a href="#" class="btn"
+                                onclick="addToCart(event, 'Product 1', '../media/NavigationMenu/PawP.png', '$29.99')">
+                                Add to Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="card" onclick="openModal('Product 1', '../media/NavigationMenu/PawP.png', '$29.99')">
+                        <img src="../media/NavigationMenu/PawP.png" alt="Product 1">
+                        <div class="card-content">
+                            <div class="card-title">Product 1</div>
+                            <div class="card-price">R29.99</div>
+                            <a href="#" class="btn"
+                                onclick="addToCart(event, 'Product 1', '../media/NavigationMenu/PawP.png', '$29.99')">
+                                Add to Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <script>
+            $(document).ready(function () {
+                $('.product-slider').slick({
+                    autoplay: true,
+                    autoplaySpeed: 3000,  // The time between each slide in milliseconds
+                    dots: true,           // Show navigation dots
+                    arrows: true,         // Enable navigation arrows
+                    infinite: true,       // Infinite scrolling of images
+                    speed: 500,           // Transition speed in milliseconds
+                    slidesToShow: 4,      // Show 4 products at a time
+                    slidesToScroll: 1,    // Scroll one product at a time
+                    adaptiveHeight: true, // Adjust the height dynamically based on the slide content
+                    responsive: [
+                        {
+                            breakpoint: 1024,
+                            settings: {
+                                slidesToShow: 3, // Show 3 products on medium screens
+                                slidesToScroll: 1
+                            }
+                        },
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                slidesToShow: 2, // Show 2 products on small screens
+                                slidesToScroll: 1
+                            }
+                        },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                                slidesToShow: 1, // Show 1 product on very small screens
+                                slidesToScroll: 1
+                            }
+                        }
+                    ]
+                });
+            });
+        </script>
+    </div>
+
+    <br>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Navigation Column -->
+            <div class="footer-column">
+                <h3>Navigation</h3>
+                <table class="social-table">
+                    <tr>
+                        <td>
+                            <a href="#"><img src="../media/NavigationMenu/logo imageDepitched_Floppy.png"
+                                    alt="Petals & Paws" class="navFooterImg"></a>
+                        </td>
+                        <td>
+                            <ul>
+                                <li><a href="../html/index.html">Home</a></li>
+                                <li><a href="../html/dog_products.html">Products</a></li>
+                                <li><a href="../html/contact.html">Contact</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <!-- Social Media Column -->
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <table class="image-table">
+                    <tr>
+                        <td><a href="#" target="_blank"><img src="../media/NavigationMenu/Green_PawPrint.png"
+                                    alt="Facebook" class="socials"></a></td>
+                        <td><a href="#" target="_blank"><img src="../media/NavigationMenu/Green_PawPrint.png"
+                                    alt="Instagram" class="socials"></a></td>
+                        <td><a href="#" target="_blank"><img src="../media/NavigationMenu/Green_PawPrint.png"
+                                    alt="Twitter" class="socials"></a></td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Contact Details Column -->
+            <div class="footer-column">
+                <h3>Contact Details</h3>
+                <p>Email: Pawpet@petalsandpaws.co.za</p>
+                <p>Phone: +27 73 942 9276</p>
+                <p>Address: Bainsflei, Bloemfontein</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

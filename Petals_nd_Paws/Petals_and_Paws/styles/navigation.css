@@ -1,0 +1,394 @@
+@font-face {
+    font-family: Beautifully_delicious_script;
+    src: url("../styles/fonts/FontsFree-Net-BeautifullyDelicious.ttf");
+}
+
+@font-face {
+    font-family: amsterdam_four_COPYRIGHT;
+    src: url("../styles/fonts/amsterdam_4/Amsterdam.ttf");
+}
+
+@font-face {
+    font-family: angella_white_COPYRIGHT;
+    src: url("../styles/fonts/angella_white/Angella\ White\ Personal\ Use\ Only.ttf");
+}
+
+@font-face {
+    font-family: Water_Brush_SIL_Open_Font_License;
+    src: url("../styles/fonts/Water_Brush/Water_Brush/WaterBrush-Regular.ttf");
+}
+
+@font-face {
+    font-family: Clicker_Script_SIL_Open_Font_License;
+    src: url("../styles/fonts/Water_Brush/Clicker_Script/ClickerScript-Regular.ttf");
+}
+
+.headbar {
+    background-color: #f5ebd9;
+}
+
+.nav-title {
+    width: 200px;
+    color: #a7b45c;
+    font-family: Clicker_Script_SIL_Open_Font_License;
+    margin: 0 auto;
+    transform: translateX(-30%);
+    font-size: 5em;
+    font-weight: 500;
+    padding: 30px;
+    z-index: 10;
+    position: relative;
+}
+
+.nav-title:hover {
+    text-decoration: underline;
+    color: #b29ec1;
+}
+
+.nav-title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 100px;
+    height: 100px;
+    background-image: url('../media/NavigationMenu/White_PawPrint.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.nav-title:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+nav {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect: swap the logo */
+.logo:hover {
+    content: url('../media/NavigationMenu/logo\ imageDepitched_Stif.png');
+    /* Change logo on hover */
+}
+
+.outer_logo{
+    width: 300px;
+    height: 300px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: -90px;
+    z-index: 10;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect: swap the logo */
+.outer_logo:hover {
+    content: url('../media/NavigationMenu/logo\ imageDepitched_Stif.png');
+    /* Change logo on hover */
+}
+
+#Layer_1 {
+    width: 50px;
+}
+
+.st0 {
+    fill: #444;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    /* Ensures both sides have the same height */
+    padding: 15px;
+    z-index: 3;
+    font-family: Clicker_Script_SIL_Open_Font_License;
+    font-size: 1.3em;
+    align-items: center;
+    margin-top: -220px;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    /* Keeps text vertically aligned */
+    min-height: 60px;
+    /* Ensures both sections maintain the same height */
+    padding: 10px 15px;
+}
+
+.nav-left a,
+.nav-right a {
+    color: #444;
+    text-decoration: none;
+    font-size: 1.7em;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    /* Aligns text vertically */
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+    text-decoration: underline;
+    color: #a7b45c;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.nav-item {
+    position: relative;
+    display: inline-block;
+    /* Ensures correct hover effect */
+}
+
+.nav-item::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    /* Center it over the text */
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 80px;
+    /* Adjust as needed */
+    height: 80px;
+    background-image: url('../media/NavigationMenu/Green_PawPrint.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    pointer-events: none;
+    /* Prevents interference with hover */
+}
+
+.nav-item:hover::after {
+    transform: translate(-50%, -100%) scale(1);
+    /* Moves it above the text */
+    opacity: 1;
+}
+
+.nav_align {
+    margin-top: -0px;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    /* Hidden by default */
+    position: absolute;
+    background-color: rgb(190, 211, 155);
+    min-width: 150px;
+    top: 100%;
+    left: 0;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+    display: block;
+    padding: 10px;
+}
+
+.dropdown-menu a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Hover to show dropdown */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+.welcome-message {
+    margin-top: 50px;
+}
+
+/* Burger Menu */
+.burger {
+    display: none;
+    /* Hide by default on desktop */
+    cursor: pointer;
+    position: relative;
+    z-index: 9;
+    background-color: rgb(190, 211, 155);
+    padding: 15px;
+    border-radius: 50%;
+    /* Ensure it's above other elements */
+}
+
+.burger div {
+    width: 30px;
+    height: 4px;
+    margin: 6px auto;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: rgb(190, 211, 155);
+    min-width: 160px;
+    z-index: 9;
+}
+
+.dropdown.active .dropdown-menu {
+    display: block;
+}
+
+/* Mobile Navigation Styles */
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(190, 211, 155);
+    }
+
+    .logo {
+        display: none;
+    }
+
+    /* The burger menu is shown on mobile screens */
+    .burger {
+        display: block;
+    }
+
+    .nav-left,
+    .nav-right {
+        display: none;
+        /* Hide navigation links on mobile */
+    }
+
+    .menu.active .nav-left,
+    .menu.active .nav-right {
+        display: block;
+        /* Show navigation links when menu is active */
+        text-align: center;
+    }
+
+    .nav-left a,
+    .nav-right a {
+        padding: 10px;
+        font-size: 1.2em;
+        color: #fff;
+        white-space: nowrap; /* Prevent text from wrapping */
+    }
+
+    .st0 {
+        fill: #fff;
+    }
+
+    .nav-left a:hover,
+    .nav-right a:hover {
+        color: #a7b45c;
+    }
+
+    .nav-item {
+        position: relative; /* Ensure dropdown items are positioned correctly */
+    }
+
+    .nav-item::after {
+        width: 50px;
+        /* Adjust as needed */
+        height: 50px;
+        background-image: url('../media/NavigationMenu/White_PawPrint.png');
+    }
+
+    /* Static Dropdown menu */
+    .dropdown-menu {
+        position: static; /* Keep dropdown menu static */
+        width: 100%;
+        background-color: #444;
+        display: none; /* Hidden by default */
+    }
+
+    /* Show dropdown when active */
+    .dropdown.active .dropdown-menu {
+        display: block;
+    }
+
+    /* Ensure dropdown is visible on hover, but prevent shifting */
+    .nav-item:hover .dropdown-menu {
+        display: block; /* Ensure dropdown is shown on hover */
+    }
+
+    /* Shift the .nav-left items to the right when dropdown is active */
+    .menu.active .dropdown.active ~ .nav-left {
+        transform: translateX(50px); /* Shift .nav-left to the right by 50px */
+        transition: transform 0.3s ease-in-out; /* Smooth transition for shifting */
+    }
+
+    /* Move the content down when menu is active */
+    .content {
+        transition: margin-top 0.3s ease-in-out;
+    }
+
+    .menu.active~.content {
+        margin-top: 150px;
+        /* Adjust this value as needed */
+    }
+
+    /* Prevent the entire nav content from shifting on hover */
+    .nav-left,
+    .nav-right {
+        transition: none; /* Remove any unnecessary transition on hover */
+    }
+
+    .nav-left a,
+    .nav-right a {
+        padding: 10px;
+    }
+
+    .dropdown.active .dropdown-menu {
+        width: 100%;
+    }
+}
+
+/* Desktop Navigation */
+@media screen and (min-width: 769px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+    .nav-left,
+    .nav-center,
+    .nav-right {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-left a,
+    .nav-right a {
+        padding: 20px 15px;
+    }
+}

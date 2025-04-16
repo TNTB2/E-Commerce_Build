@@ -1,0 +1,138 @@
+.slider {
+    width: 50%;
+    height: 300px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.sliderinfo {
+    background-color: #b29ec16d;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Courier New', Courier, monospace;
+    color: #b29ec1;
+    padding: 30px;
+}
+
+.info1 {
+    background-image: url("../media/NavigationMenu/White_PawPrint.png");
+}
+
+.info2 {
+    background-image: url("../media/NavigationMenu/Green_PawPrint.png");
+}
+
+.info3 {
+    background-image: url("../media/NavigationMenu/PawPrint.png");
+}
+
+.product-section,
+.contact-section {
+    padding: 50px 20px;
+    background-color: #a7b45c3a;
+    width: 70%;
+    border-radius: 1%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    /* Set the width of the product section to 70% */
+    margin: 0 auto;
+    /* Center the product section */
+}
+
+.divider {
+    background-color: #b29ec1;
+
+}
+
+.contactForm {
+    border: 2px solid white;
+    background-color: #ffffff;
+    width: 60%;
+    height: 440px;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+.form-group {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.form-group label {
+    width: 10%;
+    float: left;
+}
+
+.form-group span {
+    width: 77%;
+    font-family: 'Courier New', Courier, monospace;
+    float: right;
+}
+
+.form-group input,
+.form-group textarea {
+    float: right;
+    border-radius: 10%;
+    width: 70%;
+    margin: 15px;
+    padding: 5px;
+    background-color: #f5ebd999;
+    border: 2px solid rgba(255, 255, 255, 0.851);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-style: 2px solid #b29ec16d;
+    /* ------------------- not working */
+    background-color: #f5ebd9;
+}
+
+.submBtn {
+    float: right;
+    font-family: amsterdam_four_COPYRIGHT;
+    border-radius: 10%;
+    width: 150px;
+    margin: 15px;
+    margin-right: 150px;
+    padding: 0 5px 0 5px;
+    background-color: #f5ebd9;
+    border: 2px solid white;
+}
+
+.submBtn:hover {
+    background-color: #ffffff;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 1280px) {
+    .contactForm {
+        height: 550px;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        padding-top: 0px;
+    }
+
+    label {
+        text-align: center;
+        float: none;
+    }
+
+    input,
+    textarea {
+        width: 90%;
+        float: none;
+    }
+
+    .submBtn {
+        float: none;
+        margin-left: 50%;
+        float: none;
+        transform: translateX(-50%);
+    }
+}

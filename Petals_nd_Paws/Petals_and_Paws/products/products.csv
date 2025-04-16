@@ -1,0 +1,17 @@
+title,image,price,category,subcategory,isNew
+Dog Collar1,../media/NavigationMenu/PawP.png,19.99,Dogs,Collars,true
+Dog Collar2,../media/NavigationMenu/PawP.png,15.99,Dogs,Collars,false 
+Dog Harness1,../media/NavigationMenu/PawP.png,15.99,Dogs,Harnesses,true
+Dog Harness2,../media/NavigationMenu/PawP.png,15.99,Dogs,Harnesses,false 
+Cat Collar1,../media/NavigationMenu/PawP.png,19.99,Cats,Collars,true
+Cat Collar2,../media/NavigationMenu/PawP.png,15.99,Cats,Collars,false 
+Cat Harness1,../media/NavigationMenu/PawP.png,15.99,Cats,Harnesses,true
+Cat Harness2,../media/NavigationMenu/PawP.png,15.99,Cats,Harnesses,false 
+Flower Design1,../media/NavigationMenu/PawP.png,19.99,Home Decor,Decor,true
+Flower Design2,../media/NavigationMenu/PawP.png,15.99,Home Decor,Decor,false 
+Flower Design3,../media/NavigationMenu/PawP.png,15.99,Home Decor,Decor,false 
+Flower Design4,../media/NavigationMenu/PawP.png,15.99,Home Decor,Decor,false 
+Flower Design5,../media/NavigationMenu/PawP.png,19.99,Home Decor,Decor,false
+Flower Design6,../media/NavigationMenu/PawP.png,15.99,Home Decor,Decor,false
+Flower Design7,../media/NavigationMenu/PawP.png,15.99,Home Decor,Decor,false
+Flower Design8,../media/NavigationMenu/PawP.png,15.99,Home Decor,Decor,true

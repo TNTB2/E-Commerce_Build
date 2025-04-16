@@ -1,0 +1,91 @@
+.welcome-section {
+    padding: 50px 20px;
+}
+
+h1 {
+    font-family: Clicker_Script_SIL_Open_Font_License;
+}
+
+.slider img {
+    width: 70%;
+    height: 300px;
+    /* Set height for all images */
+    object-fit: cover;
+    margin: 0 auto;
+    /* Ensure images cover the area without distortion */
+    border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .slider-container {
+        width: 95%;
+    }
+
+    .slider img {
+        height: 200px;
+        /* Set height for mobile devices */
+    }
+}
+
+@media (min-width: 1024px) {
+    .slider img {
+        height: 400px;
+        /* Set height for larger desktop screens */
+    }
+}
+
+
+
+
+
+
+
+
+.product-section {
+    padding: 50px 20px;
+    background-color: #a7b45c3a;
+    width: 70%;
+    border-radius: 1%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    /* Set the width of the product section to 70% */
+    margin: 0 auto;
+    /* Center the product section */
+}
+
+.product-slider {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.product {
+    padding: 10px;
+    width: 22%;
+    /* Set the width to ensure 4 products fit on a single row */
+    box-sizing: border-box;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .product-slider {
+        width: 90%;
+    }
+
+    .product {
+        width: 45%;
+        /* On smaller screens, reduce the width to show 2 products per row */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .product {
+        width: 90%;
+        /* On very small screens, show 1 product per row */
+    }
+}

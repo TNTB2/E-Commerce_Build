@@ -1,0 +1,104 @@
+/* Footer Styles */
+.footer {
+    background-color: #f5ebd9;
+    padding: 40px 60px;
+    margin-top: 100px;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 20px 20px 20px 40px;
+    min-width: 200px;
+    box-sizing: border-box;
+    color: black;
+}
+
+.footer-column h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    text-align: center;
+    color: #a7b45c;
+}
+
+
+
+
+.image-table {
+    width: 100%;
+    max-width: 600px;  /* Optional: sets a max width for the table */
+    margin: 0 auto;    /* Centers the table horizontally */
+    border-collapse: collapse;
+    text-align: center; /* Centers content inside each cell */
+}
+
+/* Ensures the table cells have even spacing */
+.image-table td {
+    padding: 10px;
+}
+
+/* Styling for the social media images */
+.socials {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle; /* Ensures images are vertically aligned */
+    cursor: pointer; /* Shows pointer when hovering */
+}
+
+/* Optional hover effect on the images */
+.socials:hover {
+    opacity: 0.8;
+}
+
+
+
+
+.navFooterImg {
+    width: 100px;
+    height: auto;
+    margin-left: 70px;
+}
+
+.navFooterImg:hover {
+    content: url('../media/NavigationMenu/logo\ imageDepitched_Stif.png');
+}
+
+.footer-column ul {
+    list-style-type: none;
+    margin-left: 50px;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 10px 0;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+    color: #a7b45c;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
