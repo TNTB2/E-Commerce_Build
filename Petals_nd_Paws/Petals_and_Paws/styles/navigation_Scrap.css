@@ -1,0 +1,58 @@
+/* Mobile Navigation Styles */
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 110px;
+        right: 0;
+        background-color: #a7b45c;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        z-index: 1000;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .dropdown-menu {
+        position: static;
+        display: none;
+        background-color: #444;
+    }
+
+    .dropdown.active .dropdown-menu {
+        display: block;
+    }
+
+    /* Move the content down when menu is active */
+    .content {
+        transition: margin-top 0.3s ease-in-out;
+    }
+
+    .menu.active~.content {
+        margin-top: 150px;
+        /* Adjust this value as needed */
+    }
+
+    /* Shift the .nav-left items to the right when dropdown is active */
+    .menu.active .dropdown.active ~ .nav-left {
+        position: relative;
+        left: 50px; /* Adjust this value to control how far to shift */
+        transition: left 0.3s ease-in-out;
+    }
+
+    /* Ensure dropdown works well on mobile */
+    .nav-left a,
+    .nav-right a {
+        padding: 10px;
+        font-size: 1.2em;
+        color: #fff;
+    }
+}

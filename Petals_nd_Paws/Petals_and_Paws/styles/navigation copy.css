@@ -1,0 +1,290 @@
+@font-face {
+    font-family: Beautifully_delicious_script;
+    src: url("../styles/fonts/FontsFree-Net-BeautifullyDelicious.ttf");
+}
+
+@font-face {
+    font-family: amsterdam_four_COPYRIGHT;
+    src: url("../styles/fonts/amsterdam_4/Amsterdam.ttf");
+}
+
+@font-face {
+    font-family: angella_white_COPYRIGHT;
+    src: url("../styles/fonts/angella_white/Angella\ White\ Personal\ Use\ Only.ttf");
+}
+
+@font-face {
+    font-family: Water_Brush_SIL_Open_Font_License;
+    src: url("../styles/fonts/Water_Brush/Water_Brush/WaterBrush-Regular.ttf");
+}
+
+@font-face {
+    font-family: Clicker_Script_SIL_Open_Font_License;
+    src: url("../styles/fonts/Water_Brush/Clicker_Script/ClickerScript-Regular.ttf");
+}
+
+.headbar {
+    background-color: #f5ebd9;
+}
+
+
+.nav-title {
+    width: 200px;
+    font-size: 24px;
+    color: #444;
+    position: relative;
+    margin: 0 auto;
+    font-size: 2em;
+    border-radius: 50%;
+    padding: 30px;
+}
+
+.nav-title:hover {
+    text-decoration: underline;
+    color: #a7b45c;
+}
+
+.nav-title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 100px;
+    height: 100px;
+    background-image: url('../media/NavigationMenu/White_PawPrint.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.nav-title:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+
+
+
+
+nav {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect: swap the logo */
+.logo:hover {
+    content: url('../media/NavigationMenu/logo\ imageDepitched_Stif.png');
+    /* Change logo on hover */
+}
+
+
+
+#Layer_1 {
+    width: 50px;
+}
+
+.st0 {
+    fill: #444;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    /* Ensures both sides have the same height */
+    padding: 15px;
+    font-family: Clicker_Script_SIL_Open_Font_License;
+    font-size: 1.3em;
+    align-items: center;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    /* Keeps text vertically aligned */
+    min-height: 60px;
+    /* Ensures both sections maintain the same height */
+    padding: 10px 15px;
+}
+
+.nav-left a,
+.nav-right a {
+    color: #444;
+    text-decoration: none;
+    font-size: 1.7em;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    /* Aligns text vertically */
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+    border-radius: 5px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.nav-item {
+    position: relative;
+    display: inline-block;
+    /* Ensures correct hover effect */
+}
+
+.nav-item::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    /* Center it over the text */
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 80px;
+    /* Adjust as needed */
+    height: 80px;
+    background-image: url('../media/NavigationMenu/Green_PawPrint.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    pointer-events: none;
+    /* Prevents interference with hover */
+}
+
+.nav-item:hover::after {
+    transform: translate(-50%, -100%) scale(1);
+    /* Moves it above the text */
+    opacity: 1;
+}
+
+.nav_align {
+    margin-top: -0px;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: rgb(190, 211, 155);
+    min-width: 150px;
+    top: 100%;
+    left: 0;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+    display: block;
+    padding: 10px;
+}
+
+.dropdown-menu a:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+/* Burger Menu */
+.burger {
+    display: none;
+    /* Hide by default on desktop */
+    cursor: pointer;
+    position: relative;
+    z-index: 1000;
+    /* Ensure it's above other elements */
+}
+
+.burger div {
+    width: 30px;
+    height: 4px;
+    margin: 6px auto;
+    background-color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    z-index: 999;
+}
+
+.dropdown.active .dropdown-menu {
+    display: block;
+}
+
+
+
+/* Mobile Navigation Styles */
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .logo {
+        display: none;
+    }
+
+    /* The burger menu is shown on mobile screens */
+    .burger {
+        display: block;
+    }
+
+    .nav-left, .nav-right {
+        display: none; /* Hide navigation links on mobile */
+    }
+
+    .menu.active .nav-left, .menu.active .nav-right {
+        display: block; /* Show navigation links when menu is active */
+        text-align: center;
+    }
+
+    .nav-left a, .nav-right a {
+        padding: 10px;
+        font-size: 1.2em;
+    }
+
+    .dropdown-menu {
+        width: 100%; /* Make dropdowns full-width on mobile */
+    }
+}
+
+/* Desktop Navigation */
+@media screen and (min-width: 769px) {
+    .nav-left, .nav-center, .nav-right {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-left a, .nav-right a {
+        padding: 20px 15px;
+    }
+}

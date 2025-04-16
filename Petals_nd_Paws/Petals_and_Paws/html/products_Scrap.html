@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../styles/navigation.css">
+    <link rel="stylesheet" type="text/css" href="../styles/content.css">
+    <link rel="stylesheet" type="text/css" href="../styles/products.css">
+    <link rel="stylesheet" type="text/css" href="../styles/product_modal.css">
+    <link rel="stylesheet" type="text/css" href="../styles/footer.css">
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+
+    <title>Petals & Paws</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            /*rgb(190, 211, 155)*/
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+            /* Center the text horizontally */
+            margin: 0 auto;
+            /* Optional: Add margins if you want to add space */
+            padding: 20px;
+            color: #a7b45c;
+            font-size: 3em;
+            font-weight: bolder;
+            background-color: none;
+        }
+
+        /* Divider Style */
+        .divider {
+            width: 100%;
+            height: auto;
+            text-align: center;
+            background-color: none;
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            document.querySelector(".menu").classList.toggle("active");
+        }
+    </script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-title">Petals&Paws</div>
+        <img src="../media/NavigationMenu/logoDepitched_Floppy.png" alt="Logo" class="logo">
+        <div class="burger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="menu">
+            <a href="../html/cart.html" class="nav-item nav_align cart-link">🛒</a>
+            <a href="../html/index.html" class="nav-item nav_align">Home</a>
+
+            <!-- Dropdown Menu -->
+            <div class="dropdown">
+                <a href="#" class="nav-item dropdown-toggle">Products</a>
+                <div class="dropdown-menu">
+                    <a href="../html/dog_products.html">Dog Products</a>
+                    <a href="../html/cat_products.html">Cat Products</a>
+                    <a href="../html/pet_products.html">Home Products</a>
+                </div>
+            </div>
+
+            <a href="../html/contact.html" class="nav-item nav_align">Contact</a>
+        </div>
+    </nav>
+
+    <script src="../scripts/toggleNavMenu.js"></script>
+
+
+    <div class="content">
+        <section class="welcome-section">
+            <h1 class="welcome-message">Treat your canine to something as pretty as they are</h1>
+        </section>
+
+        <div class="gallery">
+            <div class="card" onclick="openModal('Product 1', '../media/NavigationMenu/PawP.png', '$29.99')">
+                <img src="../media/NavigationMenu/PawP.png" alt="Product 1">
+                <div class="card-content">
+                    <div class="card-title">Product 1</div>
+                    <div class="card-price">$29.99</div>
+                    <a href="#" class="btn"
+                        onclick="addToCart(event, 'Product 1', '../media/NavigationMenu/PawP.png', '$29.99')">
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+
+            <div class="card" onclick="openModal('Product 2', '../media/NavigationMenu/PawP.png', '$39.99')">
+                <img src="../media/NavigationMenu/PawP.png" alt="Product 2">
+                <div class="card-content">
+                    <div class="card-title">Product 2</div>
+                    <div class="card-price">$39.99</div>
+                    <a href="#" class="btn"
+                        onclick="addToCart(event, 'Product 2', '../media/NavigationMenu/PawP.png', '$29.99')">
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+
+            <div class="card" onclick="openModal('Product 3', '../media/NavigationMenu/PawP.png', '$39.99')">
+                <img src="../media/NavigationMenu/PawP.png" alt="Product 2">
+                <div class="card-content">
+                    <div class="card-title">Product 3</div>
+                    <div class="card-price">$39.99</div>
+                    <a href="#" class="btn"
+                        onclick="addToCart(event, 'Product 3', '../media/NavigationMenu/PawP.png', '$29.99')">
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+
+            <div class="card" onclick="openModal('Product 4', '../media/NavigationMenu/PawP.png', '$39.99')">
+                <img src="../media/NavigationMenu/PawP.png" alt="Product 4">
+                <div class="card-content">
+                    <div class="card-title">Product 4</div>
+                    <div class="card-price">$39.99</div>
+                    <a href="#" class="btn"
+                        onclick="addToCart(event, 'Product 4', '../media/NavigationMenu/PawP.png', '$29.99')">
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <section class="divider">
+            <h2 class="welcome-message">Collars</h2>
+        </section>
+
+        <div class="gallery">
+            <div class="card" onclick="openModal('Product 1', '../media/NavigationMenu/PawP.png', '$29.99')">
+                <img src="../media/NavigationMenu/PawP.png" alt="Product 1">
+                <div class="card-content">
+                    <div class="card-title">Product 1</div>
+                    <div class="card-price">$29.99</div>
+                    <a href="#" class="btn"
+                        onclick="addToCart(event, 'Product 1', '../media/NavigationMenu/PawP.png', '$29.99')">
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+
+            <div class="card" onclick="openModal('Product 2', '../media/NavigationMenu/PawP.png', '$39.99')">
+                <img src="../media/NavigationMenu/PawP.png" alt="Product 2">
+                <div class="card-content">
+                    <div class="card-title">Product 2</div>
+                    <div class="card-price">$39.99</div>
+                    <a href="#" class="btn"
+                        onclick="addToCart(event, 'Product 2', '../media/NavigationMenu/PawP.png', '$29.99')">
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+
+            <div class="card" onclick="openModal('Product 3', '../media/NavigationMenu/PawP.png', '$39.99')">
+                <img src="../media/NavigationMenu/PawP.png" alt="Product 2">
+                <div class="card-content">
+                    <div class="card-title">Product 3</div>
+                    <div class="card-price">$39.99</div>
+                    <a href="#" class="btn"
+                        onclick="addToCart(event, 'Product 3', '../media/NavigationMenu/PawP.png', '$29.99')">
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+
+            <div class="card" onclick="openModal('Product 4', '../media/NavigationMenu/PawP.png', '$39.99')">
+                <img src="../media/NavigationMenu/PawP.png" alt="Product 4">
+                <div class="card-content">
+                    <div class="card-title">Product 4</div>
+                    <div class="card-price">$39.99</div>
+                    <a href="#" class="btn"
+                        onclick="addToCart(event, 'Product 4', '../media/NavigationMenu/PawP.png', '$29.99')">
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <section class="divider">
+            <h2 class="welcome-message">Harnesses</h2>
+        </section>
+
+        <div class="gallery">
+            <div class="card" onclick="openModal('Product 1', '../media/NavigationMenu/PawP.png', '$29.99')">
+                <img src="../media/NavigationMenu/PawP.png" alt="Product 1">
+                <div class="card-content">
+                    <div class="card-title">Product 1</div>
+                    <div class="card-price">$29.99</div>
+                    <a href="#" class="btn"
+                        onclick="addToCart(event, 'Product 1', '../media/NavigationMenu/PawP.png', '$29.99')">
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+
+            <div class="card" onclick="openModal('Product 2', '../media/NavigationMenu/PawP.png', '$39.99')">
+                <img src="../media/NavigationMenu/PawP.png" alt="Product 2">
+                <div class="card-content">
+                    <div class="card-title">Product 2</div>
+                    <div class="card-price">$39.99</div>
+                    <a href="#" class="btn"
+                        onclick="addToCart(event, 'Product 2', '../media/NavigationMenu/PawP.png', '$29.99')">
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+
+            <div class="card" onclick="openModal('Product 3', '../media/NavigationMenu/PawP.png', '$39.99')">
+                <img src="../media/NavigationMenu/PawP.png" alt="Product 2">
+                <div class="card-content">
+                    <div class="card-title">Product 3</div>
+                    <div class="card-price">$39.99</div>
+                    <a href="#" class="btn"
+                        onclick="addToCart(event, 'Product 3', '../media/NavigationMenu/PawP.png', '$29.99')">
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+
+            <div class="card" onclick="openModal('Product 4', '../media/NavigationMenu/PawP.png', '$39.99')">
+                <img src="../media/NavigationMenu/PawP.png" alt="Product 4">
+                <div class="card-content">
+                    <div class="card-title">Product 4</div>
+                    <div class="card-price">$39.99</div>
+                    <a href="#" class="btn"
+                        onclick="addToCart(event, 'Product 4', '../media/NavigationMenu/PawP.png', '$29.99')">
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function openModal(title, image, price) {
+            // Set the modal content
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalImage').src = image;
+            document.getElementById('modalPrice').innerText = price;
+
+            // Show the modal
+            document.getElementById('productModal').style.display = 'block';
+        }
+
+        function closeModal() {
+            // Hide the modal
+            document.getElementById('productModal').style.display = 'none';
+        }
+
+        // Optional: Close the modal if the user clicks outside of the modal content
+        window.onclick = function (event) {
+            if (event.target === document.getElementById('productModal')) {
+                closeModal();
+            }
+        }
+
+    </script>
+
+
+    <!-- Popup Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="" alt="Product Image" style="width: 100%;"> <!-- Image size adjustment -->
+            <h3 id="modalTitle"></h3>
+            <p id="modalPrice"></p>
+            <button class="btn" id="modalAddToCart" onclick="addToCart(event, document.getElementById('modalTitle').innerText, 
+            document.getElementById('modalImage').src, 
+            document.getElementById('modalPrice').innerText)">
+                Add to Cart
+            </button>
+        </div>
+    </div>
+
+
+    <script src="../scripts/cart.js"></script>
+    <script src="../scripts/loadcsv.js"></script>
+
+    <br>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Navigation Column -->
+            <div class="footer-column">
+                <h3>Navigation</h3>
+                <table class="social-table">
+                    <tr>
+                        <td>
+                            <a href="#"><img src="../media/NavigationMenu/logo imageDepitched_Floppy.png"
+                                    alt="Petals & Paws" class="navFooterImg"></a>
+                        </td>
+                        <td>
+                            <ul>
+                                <li><a href="../html/index.html">Home</a></li>
+                                <li><a href="../html/dog_products.html">Products</a></li>
+                                <li><a href="../html/contact.html">Contact</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <!-- Social Media Column -->
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <table class="image-table">
+                    <tr>
+                        <td><a href="#" target="_blank"><img src="../media/NavigationMenu/Green_PawPrint.png"
+                                    alt="Facebook" class="socials"></a></td>
+                        <td><a href="#" target="_blank"><img src="../media/NavigationMenu/Green_PawPrint.png"
+                                    alt="Instagram" class="socials"></a></td>
+                        <td><a href="#" target="_blank"><img src="../media/NavigationMenu/Green_PawPrint.png"
+                                    alt="Twitter" class="socials"></a></td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Contact Details Column -->
+            <div class="footer-column">
+                <h3>Contact Details</h3>
+                <p>Email: Pawpet@petalsandpaws.co.za</p>
+                <p>Phone: +27 73 942 9276</p>
+                <p>Address: Bainsflei, Bloemfontein</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
